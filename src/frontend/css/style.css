@@ -1,0 +1,2642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* --- MENU NAV --- */
+
+.center{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-menu{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    z-index: 1000 !important;
+}
+
+.logo{
+    color: #FAF806;
+    margin-top: 15px;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.nav-item{
+    margin: 5px;
+}
+
+.nav-link:hover, .dropdown-item:hover{
+    color: #FAF806 !important;
+}
+
+.nav-link{
+    color:rgb(255, 255, 255) !important;
+}
+
+.active{
+    color: rgb(255, 255, 255) !important;
+}
+
+.menu{
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+
+.menu a{
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color: #000;
+    border-radius: 10%;
+    padding: 0.5%;
+    background-color: #FAF806;
+}
+
+.ativo{
+    color: #000;
+    border-radius: 10%;
+    padding: 0.5%;
+    background-color: #FAF806;
+}
+
+.menu-give-button{
+    background-color: #FAF806;
+    color: #141313;
+    justify-content: right;
+    border: none;
+    text-decoration: none;
+    padding: 3px;
+}
+.menu-give-button:hover{
+    background-color: white;
+    color: #141313;
+    justify-content: right;
+    border: none;
+    padding: 3px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #141313;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn{
+    display: none;
+}
+
+/* --- RODAPÉ --- */
+
+#myFooter {
+    background-color: #141313;
+    color: white;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #242424;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .instagram:hover {
+    color: purple;
+}
+
+#myFooter .btn {
+    color: rgb(0, 0, 0);
+    background-color: #FAF806 !important;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.adm{
+    color: rgb(0, 0, 0);
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+    padding: 2%;
+}
+
+.fa-solid{
+    color: white;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.logo-img{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.text-redes-sociais{
+    text-align: center;
+}
+
+.arrow{
+    width: 5%;
+}
+
+/* --- PÁGINA  INICIAL--- */
+
+.textoInicialImpacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardServHome{
+    background-color: #000000;
+    border-radius: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.projectsection{
+    background-image: url(../assets/img/Fundo-Atuacao.jpg);
+    padding: 5%;
+}
+
+.projectsection1{
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projectsection2{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.animationHome{
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.animation-css-home{
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/* Mudar a cor dos icones - caso necessário */
+
+.fa-people-group{
+    font-size: 80px;
+    color: #FAF806;
+}
+.fa-user{
+    font-size: 80px;
+    color:  #FAF806;
+}
+
+ .text-home-inicial{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.text-home-inicial h1{
+    font-size: 40px;
+}
+
+.text-home-inicial p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+
+.principal{
+    background-image: url('../assets/img/oilseed-rape-2224941.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal h1{
+    color: white;
+    font-size: 45px;
+}
+
+.principal .link-sobre-nos a{
+    color: #000;
+    padding: 10px 18px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal .link-sobre-nos a:hover{
+    color: #000;
+    background-color: #FAF806;
+}
+
+.atuacao{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main_text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.icon-link-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text img{
+    width: 40%;
+}
+
+.plusHome{
+    font-size: 50px;
+}
+
+.text-home{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    padding-top: 10%;
+}
+
+.text-home-serv{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+}
+.text-home-serv h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-home-serv p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.text-home h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-home p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.carousel{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.d-grid {
+    padding: 2%;
+}
+
+.btn1{
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 254, 254) !important;
+    border: none !important;
+    max-width: none !important;
+}
+
+.btn1:hover{
+    color: rgb(0, 0, 0) !important;
+    background-color: #FAF806 !important;
+    opacity: 0.8 !important;
+    border: none !important;
+}
+
+.text-relatos1{
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: left !important;
+}
+
+.atendidos-image-home{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.relatos-colum{
+    justify-content: space-between;
+    width: 100%;
+    height: 30em;
+    padding-top: 5%;
+    border: 1px solid violet;
+}
+
+.text-relatos{
+    width: 50%;
+    float: right;
+}
+
+.atendidos-image-home{
+    display: inline-block;
+}
+
+.atendidos-image-home{
+    width: 50%;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.text-feed{
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.feed{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Remover Powered by Curator.io */
+.crt-widget.crt-widget-branded .crt-logo {
+    display: none !important;
+}
+
+.see-more-events{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.see-more-events2 {
+    text-decoration: none;
+    color: black;
+}
+
+/* --- PÁGINA  SOBRE --- */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+ }
+  
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.flip-card-front button{
+   background-color: #FAF806;
+   color: #000;
+   padding: 4%;
+   margin-top: 60%;
+}
+
+.flip-card-back a{
+    text-decoration: none;
+    color: white;
+}
+
+.flip-card-back a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+ .flip-card-front1 {
+    background-color: #bbb;
+    color: black;
+    background-image: url(../assets/img/cardparceiro4.png);
+}
+
+.flip-card-front2 {
+    background-color: #bbb;
+    color: black;
+    background-image: url(../assets/img/cardparceiro1.png);
+}
+
+.flip-card-front3 {
+    background-color: #bbb;
+    color: black;
+    background-image: url(../assets/img/cardparceiro2.png);
+}
+
+.flip-card-front4 {
+    background-color: #bbb;
+    color: black;
+    background-image: url(../assets/img/cardparceiro3.png);
+}
+  
+
+.flip-card-back {
+    background-color: #FAF806;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back button{
+    background-color: #000000;
+    color: white;
+    padding: 6%;
+    margin-top: 30%;
+}
+  
+.principalsobreParceiros{
+    background-image: url(../assets/img/Fundo-Atuacao.jpg);
+    padding: 2%;
+}
+
+.textcardparceiros{
+    text-align: center;
+}
+
+.principalsobre{
+    padding: 4%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.valorant2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.valorant2 a {
+    width: 100%;
+    max-width: 240px;
+    height: 54px;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 10px 0;
+}
+.valorant2 a.transparent:hover > p {
+    color: white;
+}
+.valorant2 a.transparent:hover > p span.text {
+    box-shadow: 0 0 0 1px #ECE8E1;
+}
+.valorant2 a.transparent > p {
+    background: #FAF806;
+    color: #000000;
+}
+.valorant2 a:before {
+    right: 0;
+    left: initial;
+}
+.valorant2 a p {
+    margin: 0;
+    height: 54px;
+    line-height: 54px;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.valorant2 a p span.base {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.valorant2 a p span.bg {
+    left: -5%;
+    position: absolute;
+    /* cor botão assinar */
+    background: black;
+    width: 0;
+    height: 100%;
+    z-index: 3;
+    transition: 0.3s ease-out all;
+    transform: skewX(-10deg);
+}
+.valorant2 a p span.text {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.valorant2 a:hover span.bg {
+    width: 110%;
+}
+
+.carroselSobre h1{
+    text-align: center;
+}
+
+.equipe{
+    padding-bottom: 8%;
+    padding-top: 4%;
+    background-image: url("../assets/img/Fundo-Atuacao.jpg");
+}
+
+
+.cardequipe{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 4px 4px rgb(195, 193, 193);
+}
+
+.equipe{
+    text-align: center;
+}
+
+.positionteam{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 44%;
+    height: 27vh;
+}
+
+.positionteam img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@keyframes moveObject {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-5500px);
+    }
+}
+.animate {
+    display: flex;
+    animation-name: moveObject;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.animationbox {
+    display: flex;
+    width: 100vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.parceirosPagSobre{
+    display: flex;
+    margin: auto;
+}
+
+.textsobre h1{
+    font-size: 40px !important;
+}
+
+.videoaboutrevirar{
+    background-image: url(../assets/img/Fundo-Atuacao.jpg);
+    padding: 4%;
+}
+
+.videoaboutrevirar h1{
+    text-align: center;
+}
+
+.videoaboutrevirar h3{
+    text-align: center;
+}
+
+.videoabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordasobreods{
+    padding: 2%;
+}
+
+.textodssobre{
+    text-align: center;
+    font-size: 20px;
+}
+
+.textodssobre a{
+    text-decoration: none;
+    color: #427aa1;
+}
+
+.textodssobre a:hover{
+    color: black;
+}
+
+.imgonu{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.textprincipalsobre{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.textprincipalsobre img{
+    width: 100%;
+}
+
+.principal-sobre2{
+    height: 10vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.principal-sobre{
+    height: 50vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.principal-sobre h1{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+}
+
+.principal-sobre .link-sobre-nos a{
+    color: #000;
+    padding: 10px 18px;
+    display: inline-block;
+    background-color: rgb(216, 216, 216);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal-sobre .link-sobre-nos a:hover{
+    color: #000;
+    background-color: #FAF806;
+}
+
+.text-home-sobre{
+    margin: 0 auto;
+    background-color: white;
+}
+
+.text-home-sobre h1{
+    font-size: 30px;
+}
+
+.text-home-sobre p{
+    font-size: 20px;
+}
+
+.text-home-sobre2{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0%;
+    z-index: 1;
+    background-color: white;
+    padding-top: 2%;
+}
+
+.text-home-sobre2 h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-home-sobre2 p{
+    text-align: left;
+    font-size: 20px;
+}
+
+/* COntainer para o vídeo do YouTube ficar em um tamanho específico e responsivo */
+.video-container-about {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+}
+
+.video-container-about::after {
+    padding-top: 70%;
+    display: block;
+    content: '';
+}
+
+.video-container-about iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Tornar imagens responsivas e em um padrão de tamanho específico */
+.responsive-sobre {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+.responsive-sobre2 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+
+/* Para a imagem aumentar de tamanho ao passar o mouse por cima */
+.grow-sobre { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow-sobre:hover { 
+    	transform: scale(1.05); 
+    }
+
+/* id para deixar margens entre as imagens */
+#imageods-sobre{
+    margin-bottom: 24px;
+}
+
+/* Botão flutuante de Whatsapp */
+.whatswidget-button {
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+}
+
+.whatswidget-button:hover {
+
+    transform: scale(1.5) rotate(20deg);
+}
+
+
+
+
+
+
+
+/* --- PÁGINA  VOLUNTARIADO --- */
+
+.titles{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1.5rem;
+}
+
+#nome, #contato, #IDFuncao, #TelefoneEmail, #Nome, #parceiro, #assunto, #endeMap, #descricaoMap{
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+#mensagem{
+    width: 100%;
+}
+
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"]{
+    padding: 0.2em;
+    display: block;
+}
+
+.buttonDiv {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.buttonDiv3 {
+    display: flex;
+    width: 100%;
+}
+
+.buttonVol{
+    font-size: 1.2em;
+    background: #FAF806;
+    border: 0;
+    margin-bottom: 1em;
+    color: black;
+    padding: 0.2em 0.6em;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.buttonVol:hover{
+    background: black;
+    color: white;
+}
+
+.form {
+    width: 75%;
+}
+
+.fields{
+    width: 100%;
+
+}
+
+.backVol{
+    background-image: url(../assets/img/Fundo-Atuacao.jpg);
+    margin: 0 auto;
+}
+.text-home-Vol{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    padding-top: 10%;
+}
+.text-home-Vol h1{
+    text-align: center;
+    font-size: 40px;
+}
+.text-home-Vol p{
+    text-align: left;
+    font-size: 20px;
+}
+
+/*imagem dos voluntários*/
+
+.carousel-inner{
+    width: 70%;
+    border-radius: 35px;
+    margin: auto;
+}
+
+.Volimg{
+    filter: blur(3px);
+}
+
+.VolText{
+    text-align: center;
+}
+
+.carousel-caption{
+    right: 10%;
+    left: 10%;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.7))
+}
+
+/* formulário voluntário*/
+
+.button2{
+    font-size: 20px;
+    background: #FAF806;
+    border: none;
+    padding: 0.2em 0.6em;
+    margin: 0 auto;
+    width: 25vh;
+    transition: 0.5s;
+    color: black;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button2:hover{
+    background: black;
+    color: white;
+    font-size: 1.3em;
+}
+
+.imgEventos{
+    display: flex;
+}
+
+.calendarEventos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgEventos img{
+   width: 50vh;
+   margin-bottom: 20px;
+}
+
+/* .remove-gray {
+    margin-top: 20px;
+    border: none;
+    background-color: #FAF806;
+} */
+
+.buttonDiv2 {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* vídeo voluntários*/
+
+.VolVideos {
+    width: 100%;
+    text-align: center;
+}
+
+.video-responsive-Vol iframe {
+    width: 560px;
+    height: 315px;
+};
+
+/* --- PÁGINA  DOAÇÕES --- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+.fvalor {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+.videoInicio {
+    /* right: 0;
+    bottom: 0; */
+    /* width: 100%;
+    height: 100%; */
+    width:100%; 
+    height:100%
+  }
+  
+.card-footerr{
+
+}
+
+.card-bodyy{
+    
+}
+
+.alert {
+    border-radius: 5px;
+    width: 50%;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: none;
+}
+
+.card-img-house {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-img-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.card-img-top-caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.card-img-top-pix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.videospende{
+    position: relative;
+}
+
+.conteudoDoacao {
+    position: absolute;
+    top: 5%;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+@keyframes smooth {
+    from {
+        width: 40%;
+    } to {
+        width: 50%;
+    }
+  }
+
+.conteudoDoacao h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+
+.conteudoDoacao h4 {
+    color: #ffffff;
+    text-align: center;
+  }
+
+.iconeSetaInicio {
+    bottom: 0;
+    color: #f1f1f1;
+    display: none;
+    justify-content: center;
+  }
+
+.iconeSetaInicio img {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    width: 40%;
+    transition: ease all 0.2s;
+  }
+
+.iconeSetaInicio:hover img{
+    transform: scale(1.1,1.1);
+    animation: smooth 1s ease-out;
+  }
+
+
+/* Primeiro texto doação */
+
+.textoIntroducaoDoacao p {
+    size: 25px;
+}
+
+/* Caixa porque doar */
+
+.caixaPreta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #212529;
+    border-radius: 5vh;
+    padding-top: 50px;
+    width: 90%;
+}
+
+.IconePresente {
+    width: 20%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Acordeão porque doar */
+
+.acordeaoDoacao {
+    border-top: 1px solid #212529;
+    background-color: #212529;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+    color: #444;
+    outline: none;
+    display: flex;
+  }
+
+.colorIconArrow {
+    color: #FAF806;
+}
+
+  .acordeaoDoacao h6 {
+      color: #FAF806;
+  }
+  
+  .active, .acordeaoDoacao:hover {
+    background-color: rgb(95, 93, 93);
+  }
+  
+  .painel {
+    padding: 0 18px;
+    background-color: #212529;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .painel p {
+      color: white;
+  }
+
+  /* Espaço de texto para outro valor */
+.form__group {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: flex;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: flex;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+  
+/* Checkbox Radio valor */
+
+.dddd {
+    display: flex;
+}
+
+.tittleSpendes {
+    text-align: center;
+}
+
+
+.card-footer {
+    color: white;
+}
+
+.mensalorindi {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerT {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containerT input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerT:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containerT input:checked ~ .checkmark {
+    background-color: #000000;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerT input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerT .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #FAF806;
+  }
+
+
+
+/* BOTÃO PLANO MENSAL */
+
+.valorant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.valorant a {
+    width: 100%;
+    max-width: 240px;
+    height: 54px;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 10px 0;
+}
+
+.valorant a.transparent:hover > p {
+    color: black;
+}
+.valorant a.transparent:hover > p span.text {
+    box-shadow: 0 0 0 1px #ece8e1;
+}
+.valorant a.transparent > p {
+    background: #0f1923;
+    color: #ece8e1;
+}
+
+.valorant a:before {
+    right: 0;
+    left: initial;
+}
+.valorant a p {
+    margin: 0;
+    height: 54px;
+    line-height: 54px;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.valorant a p span.base {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 1px solid #000000;
+}
+
+.valorant a p span.bg {
+    left: -5%;
+    position: absolute;
+    /* cor botão assinar */
+    background: #FAF806; 
+    width: 0;
+    height: 100%;
+    z-index: 3;
+    transition: 0.3s ease-out all;
+    transform: skewX(-10deg);
+}
+.valorant a p span.text {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.valorant a:hover span.bg {
+    width: 110%;
+}
+
+/* Intituições de doação */
+
+.bancoPix {
+    width: 30%;
+    height: 50%;
+}
+
+.bancoPaypal {
+    width: 30%;
+    height: 50%;
+}
+
+.bancoCaixa {
+    width: 30%;
+    height: 50%;
+}
+
+.pixicon {
+    width: 40%;
+}
+
+.paypalicon {
+    width: 60%;
+}
+
+.caixaicon {
+    width: 60%;
+}
+
+.tituloInstituicoes {
+    text-align: center;
+}
+
+.tituloComida {
+    text-align: center;
+}
+
+.tituloHigiene {
+    text-align: center;
+}
+
+.tituloRoupas {
+    text-align: center;
+}
+
+.colunasBancos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botão copiar */
+
+.copyButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: rgb(0, 0, 0);
+    background-color: #FAF806;
+    height: 48px;
+    }
+
+.copyButton:hover {
+    transform: scale(1.04);
+    background-color: #427aa1;
+}
+
+.copyButton:active {
+    rotate: 90deg;
+    transform: rotateX(90deg), translateZ(50%);
+    background-color: #427aa1;
+}
+
+/* TESTEEEEEE */
+
+
+.buttontst {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: rgb(0, 0, 0);
+    background-color: #FAF806;
+    height: 48px;
+    }
+
+.buttontst:hover {
+    transform: scale(1.04);
+    background-color: #427aa1;
+}
+
+.buttontst2 {
+    background-color: #427aa1;
+}
+
+.buttontst3 {
+    background-color: #FAF806;
+}
+
+
+/* FIM PAGINA DOAÇÃO */
+
+
+/* --- PÁGINA  TRANSPARÊNCIA --- */
+
+.text-home-financeiro{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    padding-top: 10%;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+.h2-financeiro{
+    text-align: center;
+}
+
+.right-login{
+    width: 65vw;
+    height: 40vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* .card-text-home{
+    margin-top: 5%;
+} */
+
+.aspas-home1{
+    width: 10%;
+    margin-bottom: 4%;
+}
+
+.aspas-home2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aspas-home2 img{
+    width: 11%;
+    margin-top: 2%;
+}
+
+/* .card-depoimentos{
+    border: none;
+    width: 70%;
+} */
+
+.relatos-home-atendidos{
+    display: flex;
+    justify-content: center;
+}
+
+.card-nomeAtendido{
+   border: none;
+   display: flex;
+   margin-left: 5%;
+}
+
+.text-depoimento-home{
+    text-align: left !important;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* .card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login h1{
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+.card-inside{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 900px;
+    padding: 70px 35px;
+    border-radius: 20px;
+    box-shadow: 1000px solid blueviolet;
+} */
+
+.teste1{
+    background-color: #fff12e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 20vh;
+    width: 500px;
+    padding-bottom: 2%;
+    padding-top: 6%;
+}
+
+.teste2{
+    background-color: #ffffff;
+    height: 15vh;
+    width: 500px;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.doacao-pdf{
+    background-color: #eceded;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 15vh;
+    width: 500px;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.doacao-pdf a{
+    color: #4493cf;
+    text-decoration: none;
+}
+
+.doacao-pdf a:hover{
+    color: #427aa1;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-footer {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.relatorio-pdf{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principal-financeiro{
+    background-image: url('../assets/img/background-finance.png');
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* --- PÁGINA  CONTATO --- */
+
+.text-home-Contato{
+    margin: auto;
+}
+
+.text-home-Contato h4{
+    margin: auto;
+    text-align: center;
+}
+
+.colunaText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.larguracontato{
+    display: flex;
+    justify-content: center;
+}
+
+.TextContatoEndereco{
+    padding: 2%;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    background-color: #f3f3f3;
+    display: flex;
+}
+
+.ImgContato{
+    width: 10%;
+    object-fit:scale-down;
+    margin: 10px;
+}
+
+.contact{
+    margin-top:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-left{
+    justify-content: center;
+    align-items: center;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+.field{
+    margin-bottom: 1.5rem;
+}
+
+.botão{
+    font-size: 1.2em;
+    background: #FAF806;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    margin: 0 auto;
+    width: 50vh;
+    transition: 0.5s;
+    color: black;
+}
+
+.botão:hover{
+    background: black;
+    color: white;
+    font-size: 1.3em;
+}
+
+.botão:hover a{
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #FAF806;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    align-content: center;
+
+}
+.wrapper .button:hover {
+    width: 200px;
+
+
+}
+.wrapper .button .icon {
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+    background: #d6249f;
+}
+.wrapper .button:nth-child(3):hover .icon {
+    background: #25d366;
+}
+.wrapper .button:nth-child(4):hover .icon {
+    background: #ff0000;
+}
+.wrapper .button .icon .i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon .i {
+    color: #FFF;
+}
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) a {
+    color: #4267b2;
+    text-decoration: none;
+}
+.wrapper .button:nth-child(2) a {
+    color: #d6249f;
+    text-decoration: none;
+}
+.wrapper .button:nth-child(3) a {
+    color: #25d366;
+    text-decoration: none;
+}
+.wrapper .button:nth-child(4) a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* --- AJUSTE DE TELAS --- */
+
+@media screen and (max-width: 767px) {
+    *{
+        box-sizing: border-box;
+    }
+    #myFooter {
+        text-align: center;
+    }
+    .projectsection1{
+        flex-direction: column;
+    }
+    .btn-menu-home{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2.5%;
+    }
+    
+}
+
+@media (max-width:320px) { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 97%;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 300px;
+        height: 169px;
+    };
+}
+
+@media (max-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 4%;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 300px;
+        height: 169px;
+    };
+
+}
+
+@media (max-width:600px) { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 15%;
+    }
+
+    .home2{
+        margin-right: 20%;
+    }
+
+    .home3{
+        margin-right: 20%;
+    }
+
+    .home4{
+        margin-right: 60%;
+        margin: 0 auto;
+        padding: 0 2%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
+    .relatos-colum{
+        /* justify-content: space-between; */
+        width: 100%;
+        height: 30em;
+        padding-top: 5%;
+        border: 1px solid rgb(0, 34, 255);
+    }
+    
+    .text-relatos{
+        width: 50%;
+        float: none;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 300px;
+        height: 169px;
+    };
+}
+
+@media (max-width:801px) { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 9%;
+    }
+
+    
+    .home2{
+        margin-right: 7%;
+    }
+
+    .home3{
+        margin-right: 7%;
+    }
+
+    .home4{
+        margin-right: 60%;
+        margin: 0 auto;
+        padding: 0 2%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 300px;
+        height: 169px;
+    };
+}
+
+@media (max-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 7%;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 400px;
+        height: 225px;
+    };
+
+}
+
+@media (max-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    *{
+        box-sizing: border-box;
+    }
+    .arrow{
+        margin: 0 auto;
+        width: 8%;
+    }
+
+    .video-responsive-Vol iframe {
+        width: 400px;
+        height: 225px;
+    };
+    
+}
+
+@media (max-width: 1290px) {
+    *{
+        box-sizing: border-box;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #e7e7e7;
+        z-index: 10000;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,.05);
+    }
+    #btn{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #e7e7e7;
+    }
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        color: rgb(255, 255, 255);
+    }
+    .nav-link{
+        color:rgb(0, 0, 0) !important;
+    }
+    #hamburguer::after, #hamburguer::before{
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+
+
+
+
+
+
+/* PÁGINA EVENTOS */
+
+.text-home-eventos{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    padding-top: 10%;
+}
+.text-home-eventos h1{
+    font-size: 40px;
+}
+.text-home-eventos p{
+    text-align: left;
+    font-size: 20px;
+}
+.eventos-colum{
+    justify-content: space-between;
+    width: 100%;
+    height: 30em;
+    padding-top: 5%;
+}
+.eventosetup{
+    margin-bottom: 10%;
+}
+.fonte-eventos{
+    color:#427AA1;
+    margin-top: 5%;
+}
+.space-down{
+    margin-bottom: 5%;
+}
+.title-eventos{
+    text-align: center;
+}
+.background-eventos{
+    background-image: url(../assets/img/Fundo-Atuacao.jpg);
+    padding: 50px !important;
+}
+.home-eventos{
+    text-align: center;
+}
+#linha-eventos-confraternização{
+    background-color: #FFF601;
+    height: 8px;
+    margin-right: 25rem;
+}
+#linha-eventos-decoração{
+    background-color: #FFF601;
+    height: 8px;
+    margin-right: 25rem;
+}
+#linha-eventos-palestra{
+    background-color: #FFF601;
+    height: 8px;
+    margin-right: 37rem;
+}
+#linha-eventos-futuros{
+    background-color: #FFF601;
+    height: 8px;
+    margin-right: 33rem;
+}
+
+.texteventos1, .texteventos2, .texteventos3, .texteventos4, .texteventos5, .texteventos6, .texteventos7, .texteventos8{
+    visibility: visible; 
+    animation-delay: 0.1s; 
+    animation-name: fadeInUp;
+    background-color: #4493CF;
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 4px 4px rgb(218, 218, 218);
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.texteventos9, .texteventos10, .texteventos11, .texteventos12{
+    visibility: visible; 
+    animation-delay: 0.1s; 
+    animation-name: fadeInUp;
+    background-color: #4493CF;
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 4px 4px rgb(218, 218, 218);
+    margin: 20px;
+    width: 250px;
+    height: 270px;
+    cursor: pointer;
+}
+
+.sizeRela{
+    font-size: 50px;
+}
+
+.texteventos1{
+    background-image: url(../assets/img/fichas.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+} 
+.texteventos2{
+    background-image: url(../assets/img/formulários.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos3{
+    background-image: url(../assets/img/DOAÇÕES.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos4{
+    background-image: url(../assets/img/EVENTOS.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos5{
+    background-image: url(../assets/img/relatórios.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos6{
+    background-image: url(../assets/img/MAPA.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos7{
+    background-image: url(../assets/img/config.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+} 
+.texteventos8{
+    background-image: url(../assets/img/revirar.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+}
+.texteventos9{
+    background-image: url(../assets/img/águarelatório.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+}
+.texteventos10{
+    background-image: url(../assets/img/comidarelatório.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+}
+.texteventos11{
+    background-image: url(../assets/img/rouparelatório.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+}
+.texteventos12{
+    background-image: url(../assets/img/peoplerelatório.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6)
+}
+
+.fa-calendar-days, .fa-sheet-plastic, .fa-wpforms, .fa-hand-holding-dollar, .bi-clipboard-data, .bi-geo-alt, .bi-gear-fill, .bi-laptop, .bi-box2-heart, .bi-telephone, .bi-coin, .bi-envelope-paper-heart, .bi-hourglass-bottom, .bi-clipboard-heart, .bi-clipboard, .bi-file-earmark-arrow-up, .bi-ticket, .bi-egg, .bi-droplet-half, .bi-person-badge, .bi-person{
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.space{
+    margin-bottom: 50px;
+}
+
+.fa-plus{
+    color: #000;
+}
+
+.texteventos1:hover{
+    background-image: url(../assets/img/fichas.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos2:hover{
+    background-image: url(../assets/img/formulários.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos3:hover{
+    background-image: url(../assets/img/DOAÇÕES.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos4:hover{
+    background-image: url(../assets/img/EVENTOS.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos5:hover{
+    background-image: url(../assets/img/relatórios.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos6:hover{
+    background-image: url(../assets/img/MAPA.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos7:hover{
+    background-image: url(../assets/img/config.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos8:hover{
+    background-image: url(../assets/img/revirar.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.texteventos9:hover{
+    background-image: url(../assets/img/revirar.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+.texteventos10:hover{
+    background-image: url(../assets/img/revirar.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+.texteventos11:hover{
+    background-image: url(../assets/img/revirar.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+.texteventos12:hover{
+    background-image: url(../assets/img/revirar.png);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+
+.texteventos1 h3, .texteventos2 h3, .texteventos3 h3, .texteventos4 h3, .texteventos5 h3, .texteventos6 h3, .texteventos7 h3,  .texteventos8 h3,  .texteventos9 h3,   .texteventos10 h3,  .texteventos11 h3,  .texteventos12 h3{
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+
+.btneventos {
+    width: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+    text-decoration: none;
+    padding: 2%;
+}
+
+.cardcalendareventos{
+    display: flex;
+}
+
+.botaoeventos a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.image-reports-event{
+    border-radius: 0%;
+    width: 100% !important;
+}
+
+/* PÁGINA ERRO */
+
+.text-erro-inicio h1{
+    font-size: 50px;
+}
+
+.text-erro-inicio p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.text-erro{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-erro a{
+    text-decoration: none;
+    color: white !important;
+}
+
+.text-erro a:hover{
+    color: black !important;
+}
+
+.img-error img{
+    width: 700px;
+}
+
+.btn-erro{
+    margin-bottom: 50px;
+    background-color: black;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.btn-erro:hover{
+    background-color: #FAF806;
+}
+
+.textoTituloDoacao h1 {
+    font-size: 14px;
+}
+
+.textoTituloDoacao h4 {
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px){
+    .conteudoDoacao{
+        top: 20%;
+    }
+    .iconeSetaInicio {
+        display: inline-flex;
+    }
+    .textoTituloDoacao h1 {
+        font-size: 50px;
+    }
+    
+    .textoTituloDoacao h4 {
+        font-size: 30px;
+    }
+
+    .caixaPreta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #212529;
+        border-radius: 5vh;
+        padding-top: 50px;
+        width: 70%;
+    }
+  }

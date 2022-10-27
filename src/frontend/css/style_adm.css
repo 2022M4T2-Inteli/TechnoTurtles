@@ -1,0 +1,473 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* PÁGINA FICHA DE ABORDAGEM */
+
+.text-principal-abordagem{
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+/* PÁGINA FICHA DE CADASTRO */
+
+
+
+
+
+
+
+/* PÁGINA DE LOGIN */
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login h1{
+    font-size: 3vw;
+    color: #000000;
+}
+
+.left-login-img{
+    width: 35vw;
+}
+
+.text-login{
+    text-align: center;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login h1{
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    padding: 30px 35px;
+    background: #ffd900;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px  #ffe96c;
+}
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.text-field input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background:#ffe760;
+    color: rgb(0, 0, 0) !important;
+    font-size: 16px;
+    box-shadow: 0px 10px 40px  #ffe96c;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field label{
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 14px !important;
+    
+}
+
+.login{
+    width: 30%;
+}
+
+/* Adicionar caso queira escrever algo dentro das caixas de login */
+/* .text-field input::placeholder{
+    color: rgb(54, 54, 54);
+} */
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #ffe760;
+}
+
+.btn-login:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login h1{
+        font-size: 30px;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-img{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90vw;
+    }
+}
+
+/* PÁGINA HOME ADM */
+
+.costume{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.text-home{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -4%;
+  z-index: 1;
+  background-color: white;
+  padding-top: 2%;
+}
+
+.text-home h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.text-home p{
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Formularios-controle */
+
+
+.button-formularios-controle {
+    /* Botões da página de adm */
+    background-color: #F5F9FD;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 100%;
+}
+
+
+/* tipos de bordas dos botões */
+.button12-formularios-controle {border-radius: 12px;}
+.button50-formularios-controle {border-radius: 50px;}
+
+.button-formularios-controle { 
+    /* Tempo para acontecerem as trensições dos efeitos nos botões */
+	transition: all .2s ease-in-out;
+
+}
+  
+.button-formularios-controle:hover { 
+    /* Mudar cor do botão ao passar o mouse por cima */
+    background-color: #ffd9fd; 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.button-formularios-controle:active {
+    /* Mudar tamanho do botão ao clicar */
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.button-voltar {
+/* Botão voltar */
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 50px 4px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    /* margin: 4px 2px;
+    width: 50%; */
+ 
+    margin: auto;
+
+}
+
+.button-footer {
+   position: fixed;
+    bottom: 20px;
+
+}
+
+.button-voltar:hover { 
+    /* efeito ao passar o mouse em cima do botão voltar */
+    background-color: #ff08ce; 
+    }
+
+.button-voltar { 
+    /* Tempo até acontecer o efeito de transição do botão voltar */
+        transition: all .3s ease-in-out; 
+}
+
+
+
+
+
+  .container-controle { 
+    justify-content: center;
+    position: static;   
+    display: flex;
+    margin-top: 20px;
+  }
+  
+
+
+  .text-controle{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+    z-index: 1;
+    background-color: white;
+    padding-top: 2%;
+  }
+  
+  .text-controle{
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .text-controle p{
+    text-align: left;
+    font-size: 20px;
+  }
+
+/* PÁGINA FREQUENCIA */
+
+.DataFrequencia{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.frequenciaLayout{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pagination{
+    display: flex;
+    justify-content: right;
+    width: 90%;
+}
+
+.PesqFreq{
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* teste */
+
+.to-receive-values-box.active {
+    margin-bottom: 3.5rem;
+}
+.to-receive-values-box:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+.box-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-summary span {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+
+/* LOGIN PRINCIPAL  */
+
+.loginAdm{
+    height: 100vh;
+    background: linear-gradient(120deg, #4493CF, #5FDBA7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container{
+    min-height: 600px;
+    width: 500px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.login_container_img{
+    min-height: 600px;
+    width: 500px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.copyright{
+    display: flex !important;
+    text-align: left !important;
+    padding-top: 130px;
+    
+}
+
+img{
+    padding-top: 50px;
+    width: 450px;
+}
+
+.login_title{
+    margin-bottom: 32px;
+    color: #303030;
+}
+
+.login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input{
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.login_input-border{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+
+.login_input-border::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg, #4493CF, #5FDBA7);
+    transition: .3s ease-in-out;
+}
+
+
+.login_input:focus + .login_input-border::after{
+    width: 100%;
+}
+
+.login_submit{
+    height: 48px;
+    width: 100%;
+    padding-left: 8px;
+    outline: none;
+    position: relative;
+    background: linear-gradient(120deg, #4493CF, #5FDBA7);
+    color: white;
+    background-size: 200%;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.login_submit:hover{
+    background-position: right;
+}
+
+.login_reset{
+    font-size: 12px;
+    color: #929292;
+    text-decoration: none;
+}
