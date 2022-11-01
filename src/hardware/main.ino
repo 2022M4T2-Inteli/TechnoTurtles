@@ -58,35 +58,35 @@ void loop() {
   delay(2000);
 
   
-  wifi_sta_list_t wifi_sta_list;
-  tcpip_adapter_sta_list_t adapter_sta_list;
+  wifi_sta_list_t wifi_sta_list; // Creating a list of Wi-Fi stations
+  tcpip_adapter_sta_list_t adapter_sta_list; // Creating a list of TCP/IP stations
 
-  memset(&wifi_sta_list, 0, sizeof(wifi_sta_list));
-  memset(&adapter_sta_list, 0, sizeof(adapter_sta_list));
+  memset(&wifi_sta_list, 0, sizeof(wifi_sta_list)); // Clearing the list of Wi-Fi stations
+  memset(&adapter_sta_list, 0, sizeof(adapter_sta_list)); // Clearing the list of TCP/IP stations
 
-  esp_wifi_ap_get_sta_list(&wifi_sta_list);
+  esp_wifi_ap_get_sta_list(&wifi_sta_list); // Getting the list of Wi-Fi stations
   tcpip_adapter_get_sta_list(&wifi_sta_list, &adapter_sta_list);
 
   for (int i = 0; i < adapter_sta_list.num; i++)
   {
 
-    tcpip_adapter_sta_info_t station = adapter_sta_list.sta[i];
+    tcpip_adapter_sta_info_t station = adapter_sta_list.sta[i]; // Get the station information
 
     Serial.print("station nr ");
-    Serial.println(i);
+    Serial.println(i); // Print the station number
 
     Serial.print("MAC: ");
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 6; i++) 
     {
 
-      Serial.printf("%02X", station.mac[i]);
+      Serial.printf("%02X", station.mac[i]); // Print the MAC address of the station
       if (i < 5)
         Serial.print(":");
     }
 
-    Serial.print("\nIP: ");
-    Serial.println(station.ip.addr);
+    Serial.print("\nIP: "); 
+    Serial.println(station.ip.addr); // Print the IP address of the station
   }
 
   Serial.println("-----------");
