@@ -24,11 +24,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
     }
 };
 
-void setup() {
-  Serial.begin(115200);
-
-  WiFi.softAP("MyESP32AP"); // Sets ESP32 to be a soft Wi-Fi Acess Point with the name "MyESP32AP"
-
+void setupBT(){
   // Routine to search BlueTooth devices 
 
   Serial.println("Scanning...");
@@ -46,8 +42,7 @@ void setup() {
   pBLEScan->setWindow(99);  // less or equal setInterval value
 }
 
-void loop() {
-
+void buscaBT(){
   // Displays all devices found by bluetooth search
   
   BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
@@ -56,8 +51,19 @@ void loop() {
   Serial.println("Scan done!");
   pBLEScan->clearResults();   // delete results fromBLEScan buffer to release memory
   delay(2000);
+}
 
-  
+
+void setup() {
+  Serial.begin(115200);
+
+  WiFi.softAP("MyESP32AP"); // Sets ESP32 to be a soft Wi-Fi Acess Point with the name "MyESP32AP"
+
+  setupBT()
+
+}
+
+void buscaWifi(){
   wifi_sta_list_t wifi_sta_list; // Creating a list of Wi-Fi stations
   tcpip_adapter_sta_list_t adapter_sta_list; // Creating a list of TCP/IP stations
 
@@ -91,4 +97,9 @@ void loop() {
 
   Serial.println("-----------");
   delay(5000);
+}
+
+void loop() {
+  buscaBT();
+  buscaWifi();
 }
