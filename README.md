@@ -1,9 +1,9 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
-# Nome do projeto
-Prototipação de solução IoT
-## Nome do grupo
-TechnoTurtles 
+# Prototipação de solução IoT
+
+## TechnoTurtles (Grupo 4)
+ 
 ## Integrantes: 
 <br/>
 - <a href="https://www.linkedin.com/in/emanuele-morais/">Emanuele Lacerda Morais Martins</a><br/>
@@ -31,12 +31,21 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 
 ## 🗃 Histórico de lançamentos
 
-* 0.1.1 - 21/10/2022
+* 1.0.0 - 21/10/2022
     * Entrega da Sprint 1 (Documentação e prottipações)
-* 0.2.0 - 27/10/2022
+* 1.1.0 - 27/10/2022
     * Criação da estrutura das pastas
-* 0.1.1 - 11/01/2022
+* 1.2.0 - 28/10/2022
     * Wifi and Bluetooth prototypes
+* 2.0.0 - 02/11/2022
+    * Add main.ino in hardware
+* 2.1.0 - 03/11/2022
+    * Encapsulamento em funções
+* 2.2.0 - 04/11/2022
+   * Entrega da Sprint 2
+* 2.3.0 - 05/11/2022
+   * Refinamento de itens
+    
 
 ## 📋 Licença/License
 
