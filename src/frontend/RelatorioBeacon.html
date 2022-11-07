@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+</head>
+<header>
+  <style>
+    table {
+      font-family: sans-serif;
+      width: 100%;
+    }
+   
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 10px;
+    }
+   
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    .tabelaFreNu{
+      width: 50px;
+    }
+    .tabelaPeq{
+      width: 50px;
+    }
+
+    </style>
+    <nav>
+        <div>
+          <img src="./logoBeacon.png"  class="logo">
+        </div>
+    </nav>
+</header>
+<body>
+  
+  <div class="closesec">
+
+    
+    <a href="./PagAssistente.html">
+    <button class="smBtn">
+    <i class="fa-solid fa-xmark"></i>
+    </button>
+    </a>
+  </div>
+  <center>
+  <div class="pesq">
+    <input type="text" class="searchTerm" placeholder="Pesquise um ID...">
+    <button class="smBtn">
+      <center>
+      <i class="fa-solid fa-magnifying-glass-location"></i>
+    </center>
+    </button>
+  </div>
+  </center>
+
+  <div class="centerList">
+            
+    <label id="locais_e">Escolha o Ativo: </label>
+    <select class="inputlarge">
+        <option selected disabled>Selecione</option>
+        <option>Notebooks</option>
+        <option>Ipads</option>
+        <option>Apple pencil</option>
+        <option>Cadeiras</option>
+        <option>Mesas</option>
+    </select>
+  </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Identificador</th>
+          <th>Local</th>
+          <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="doadores">
+      
+    </tbody>
+      
+    </table>
+    <br>
+    <br><br><br>
+    <center>
+    <button class="buttonLog">Baixar</button>
+  </center>
+    <script src="./script.js"></script>
+</html>
