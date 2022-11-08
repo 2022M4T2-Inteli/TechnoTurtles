@@ -10,7 +10,7 @@ app.get('/', function(req, res){
 })
 
 app.post('/device', function(req, res){
-    console.log(req);
+    console.log(req.body);
     res.json({
         "statusCode": 200
     })
