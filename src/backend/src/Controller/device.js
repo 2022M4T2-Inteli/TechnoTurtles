@@ -2,7 +2,7 @@ import { openDb } from "../configDB.js";
 
 export async function createTable(){
     openDb().then(db=>{
-        db.exec('CREATE TABLE IF NOT EXISTS Devices ( id INTEGER PRIMARY KEY, tipo TEXT, patrimonio INTEGER ) ');
+        db.exec('CREATE TABLE IF NOT EXISTS Devices ( id INTEGER PRIMARY KEY, tipo TEXT, patrimonio INTEGER, sala INTEGER ) ');
     })
 } 
 
@@ -18,10 +18,10 @@ export async function updateDevice(device){
     })
 }
 
-export async function selectDevices(){
-    return openDb().then(async (db) => {
-        const res = await db.all('SELECT * FROM Devices');
-        return res;
+export async function selectDevices(req, res){
+    openDb().then(async (db) => {
+        db.all('SELECT * FROM Devices')
+        .then(devices => res.json(devices))
     });
 }
 
