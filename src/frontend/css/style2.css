@@ -288,7 +288,7 @@ div.card2:hover {
     font-size: x-large;
 }
 
-.icon3{
+.icon3 {
     font-size: 5vw;
     transition: transform 0.3s ease;
 }
@@ -378,8 +378,8 @@ input {
     float: right;
 }
 
-.btnIcone{
-    float:left;
+.btnIcon {
+    float: left;
 }
 
 .busca {
