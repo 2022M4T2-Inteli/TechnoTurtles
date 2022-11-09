@@ -3,29 +3,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@700&display=swap');
 
-:target .untarget {
+/* :target .untarget {
     display: none;
-}
+} */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 1vw;
-}
+} */
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: #393939;
-}
+} */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, rgba(0, 0, 0, 0.150));
-}
+} */
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, #FFF455, rgba(0, 0, 0, 0.150));
-}
+} */
 
-::-webkit-scrollbar-thumb:active {
+/* ::-webkit-scrollbar-thumb:active {
     background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, #FFF455, #FFF455, rgba(0, 0, 0, 0.150));
-}
+} */
 
 
 * {
@@ -123,8 +123,8 @@ div.pargphCit {
 h2.ttl1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     align-items: center;
 }
 
@@ -210,6 +210,7 @@ div.centerList {
     padding-right: 10%;
     padding-left: 10%;
     padding-bottom: 10%;
+    padding-top: 1px;
     text-align-last: center;
 }
 
@@ -287,6 +288,11 @@ div.card2:hover {
     font-size: x-large;
 }
 
+.icon3{
+    font-size: 5vw;
+    transition: transform 0.3s ease;
+}
+
 .fa {
     color: #767676;
     font-size: xx-large;
@@ -329,6 +335,8 @@ button.marg {
 
 .smBtn {
     width: 5vw;
+    color: #D14949;
+
 }
 
 button:hover {
@@ -368,6 +376,10 @@ input {
 
 .closesec {
     float: right;
+}
+
+.btnIcone{
+    float:left;
 }
 
 .busca {
