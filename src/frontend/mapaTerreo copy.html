@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.6/css/dx.common.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.6/css/dx.light.css" />
     <!-- Personal Stylesheets  -->
-    <link rel="stylesheet" type="text/css" href="./css/teste.css" />
     <link rel="stylesheet" type="text/css" href="./css/sidebar.css" />
     <link rel="stylesheet" type="text/css" href="./css/style2.css" />
     <!-- Bootstrap icons -->
@@ -44,8 +43,8 @@
                 <input type="text" placeholder="Search...">
                 <span class="tooltip">Search</span>
             </li>
-            <li href="./Ativos.html">
-                <a href="#">
+            <li>
+                <a href="./Ativos.html">
                     <i class="bi bi-clipboard-check"></i>
                     <span class="links_name">Itens</span>
                 </a>
@@ -58,15 +57,15 @@
                 </a>
                 <span class="tooltip">Relatórios</span>
             </li>
-            <li href="./MapaTerreo.html">
-                <a href="#">
+            <li>
+                <a href="./MapaTerreo.html">
                     <i class="bi bi-map"></i>
                     <span class="links_name">Mapa</span>
                 </a>
                 <span class="tooltip">Mapa</span>
             </li>
-            <li href="./Config.html">
-                <a href="#">
+            <li>
+                <a href="./Config.html">
                     <i class="bi bi-person-fill"></i>
                     <span class="links_name">Configurações</span>
                 </a>
@@ -93,11 +92,36 @@
 
     <!-- ============= Header code =============  -->
     <header>
-        <div class="search">
-            <i class="bi bi-search"></i>
-            <input onkeyup="searchFilter()" class="inputSearch" type="search" id="inputSearchID" placeholder="Search">
+        <!-- search div  -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input onkeyup="searchFilter()" class="inputSearch" type="search" id="inputSearchID"
+                        placeholder="Search">
+                </div>
+            </div>
+        </div>
+        <!-- other functions row  -->
+        <div class="row">
+            <div class="centerList">
+                <div class="inputlarge">
+                    <i class="bi bi-triangle-fill" style="float:left;"></i>
+                    <select class="inputlarge" style="float:right;">
+                        <option selected disabled>Selecione o ativo</option>
+                        <option>Notebooks</option>
+                        <option>Ipads</option>
+                        <option>Apple pencil</option>
+                        <option>Cadeiras</option>
+                        <option>Mesas</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
         </div>
     </header>
+
 
 
     <!-- ========== Vector map container ========== -->

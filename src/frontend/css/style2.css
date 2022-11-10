@@ -83,6 +83,10 @@ img:hover {
     right: 0%;
 }
 
+#vector-map {
+    height: 460px;
+}
+
 div.pargph {
     margin-top: 20px;
     padding: 50px;
@@ -173,14 +177,6 @@ p.txt2 {
     display: flex;
     padding-top: 8vh;
     justify-content: center;
-}
-
-div.centerList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .inl-block {
@@ -316,7 +312,7 @@ div.card2:hover {
     padding: 50px 20px 30px 20px;
 }
 
-button {
+button.marg {
     background-color: #D14949;
     border: 0;
     padding: 17px;
@@ -328,16 +324,7 @@ button {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.250);
     /* box-shadow: 0px 5px 10px #ebebeb; */
     transition: transform 0.3s ease;
-}
-
-button.marg {
     margin: 8px;
-}
-
-.smBtn {
-    width: 5vw;
-    color: #D14949;
-
 }
 
 button:hover {
@@ -371,7 +358,7 @@ footer div ul {
 }
 
 .map {
-    padding-top: 30px;
+    padding-top: 15px;
     border: 2px;
     width: 98%;
 }
@@ -452,6 +439,19 @@ input {
 }
 
 .search {
+    padding-top: 4px;
+    text-align: center;
+    position: sticky;
+    height: 20px;
+}
+
+.search i {
+    font-size: 20px;
+    padding-right: 2px;
+}
+
+.pesq {
+    padding-top: 4px;
     text-align: center;
     position: sticky;
     height: 20px;
@@ -460,8 +460,31 @@ input {
 .inputSearch {
     width: 50%;
     height: 200%;
+    font-size: 15px;
 }
 
+div.centerList {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.inputlarge {
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    background: #bcbcbc;
+    /* background: #D14949; */
+    width: 10px;
+    border: 1px;
+    border-radius: 12px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
 
 @media (min-width: 900px) {
 
@@ -638,11 +661,7 @@ input {
     .inputlarge {
         line-height: 24px;
         margin: 0 !important;
-        width: 60vw !important;
-    }
-
-    .imgsobre {
-        width: 50vw;
+        width: 18vw !important;
     }
 
     .lg-screen-RLpadding10 {
@@ -800,7 +819,7 @@ input {
     .inputlarge {
         line-height: 24px;
         margin: 0 !important;
-        width: 70vw !important;
+        width: 25vw !important;
     }
 
     .imgsobre {
@@ -867,18 +886,6 @@ input {
 }
 
 .busca {
-    font-family: "Poppins", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 200%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.inputlarge {
     font-family: "Poppins", sans-serif;
     outline: 0;
     background: #f2f2f2;
