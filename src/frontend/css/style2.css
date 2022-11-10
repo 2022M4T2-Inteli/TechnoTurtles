@@ -50,6 +50,7 @@ header {
     z-index: 2;
     position: sticky;
     top: 0;
+    padding-left: 80px;
 }
 
 .noDec {
@@ -211,7 +212,7 @@ div.centerList {
     padding-left: 10%;
     padding-bottom: 10%;
     padding-top: 1px;
-    text-align-last: center;
+    text-align: center;
 }
 
 div.card {
@@ -369,6 +370,12 @@ footer div ul {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.250);
 }
 
+.map {
+    padding-top: 30px;
+    border: 2px;
+    width: 98%;
+}
+
 input {
     border-radius: 8px;
     border-color: #ebebeb;
@@ -442,6 +449,17 @@ input {
 .closesec {
     position: sticky;
     top: 12vh;
+}
+
+.search {
+    text-align: center;
+    position: sticky;
+    height: 20px;
+}
+
+.inputSearch {
+    width: 50%;
+    height: 200%;
 }
 
 
