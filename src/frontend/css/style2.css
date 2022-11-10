@@ -48,7 +48,6 @@ hr {
 
 header {
     z-index: 2;
-    position: sticky;
     top: 0;
     padding-left: 80px;
 }
@@ -353,10 +352,6 @@ footer div ul {
     justify-content: space-evenly;
 }
 
-#map {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.250);
-}
-
 .map {
     padding-top: 15px;
     border: 2px;
@@ -376,13 +371,6 @@ input {
     float: left;
 }
 
-.busca {
-    line-height: 24px;
-    margin: 0 !important;
-    width: 30vw !important;
-}
-
-
 .dropdown-content {
     display: none;
 }
@@ -401,15 +389,6 @@ input {
     color: #0F241D;
     background: #F9F9F9;
     transition: 0.5s;
-}
-
-.apoiadores {
-    background: #F9F9F9;
-    padding-top: 5%;
-}
-
-.iconesmedio {
-    font-size: 5vw;
 }
 
 .entire {
@@ -450,13 +429,6 @@ input {
     padding-right: 2px;
 }
 
-.pesq {
-    padding-top: 4px;
-    text-align: center;
-    position: sticky;
-    height: 20px;
-}
-
 .inputSearch {
     width: 50%;
     height: 200%;
@@ -464,7 +436,7 @@ input {
 }
 
 div.centerList {
-    display: grid;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
@@ -484,6 +456,27 @@ div.centerList {
     box-sizing: border-box;
     font-size: 14px;
     text-align: center;
+}
+
+/* Flex Container */
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/* Flex Item */
+.item {
+    margin: 5px;
+    padding: 0 10px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 @media (min-width: 900px) {
