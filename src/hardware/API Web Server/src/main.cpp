@@ -16,6 +16,8 @@ WiFiClient client;
 AsyncWebServer serverBase(80);
 HTTPClient httpBase;
 
+StaticJsonDocument<200> test;
+
 class LocalAPI
 {
 private:
@@ -57,6 +59,14 @@ public:
                  Serial.println("Recebida");
                  request->send_P(200, "text/plain", RETURN_MESSAGE);
                });
+    server->on("/devices", HTTP_GET,
+                [](AsyncWebServerRequest *request)
+                {
+                 Serial.println("Mandando JSON");
+                 String json;
+                 serializeJson(test, json);
+                 request->send(200, "application/json", json);
+                });
     server->begin();
   };
 
@@ -126,6 +136,9 @@ void setup()
   acessBackend = new BackendAPI(SSID, PWD, DESTINY, &httpBase);
 
   acessBackend->conecta();
+
+  test["new_information"] = "Some text here";
+  test["ID"] = 123;
 }
 
 void loop()

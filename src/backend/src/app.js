@@ -16,6 +16,13 @@ app.get('/', function(req, res){
     res.send('Hello World');
 })
 
+app.get('/test', function(req, res){
+    res.json({
+        "statusCode": 200,
+        "mensagem": "Teste de conexão com o servidor"
+    });
+})
+
 app.get('/devices', async function(req, res){
     let devices = await selectDevices();
     res.json(devices);
