@@ -8,6 +8,8 @@ app.use(express.json());
 import {router} from './routes.js';
 app.use(router);
 
+app.use(express.static('frontend'));
+
 createTable();
 
 const PORT = 3000;
