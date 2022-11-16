@@ -453,7 +453,7 @@ input {
 
 div.centerList {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -465,11 +465,11 @@ div.centerList {
     outline: 0;
     background: #bcbcbc;
     /* background: #D14949; */
-    width: 10px;
+    width: 400px;
     border: 1px;
     border-radius: 12px;
     margin: 0 0 15px;
-    padding: 15px;
+    padding: 5px;
     box-sizing: border-box;
     font-size: 14px;
     text-align: center;

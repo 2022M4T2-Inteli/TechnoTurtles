@@ -110,49 +110,57 @@
   </div>
 
   <header>
-    <div class="search">
-      <i class="bi bi-search"></i>
-      <input onkeyup="searchFilter()" class="inputSearch" type="search" id="inputSearchID" placeholder="Search">
-    </div>
+
   </header>
 
-  <div class="centerList">
-
-    <i class="bi bi-triangle-fill"></i>
-
-    <label id="locais_e">Escolha o Ativo: </label>
-    <select class="inputlarge">
-      <option selected disabled>Selecione</option>
-      <option>Notebooks</option>
-      <option>Ipads</option>
-      <option>Apple pencil</option>
-      <option>Cadeiras</option>
-      <option>Mesas</option>
-    </select>
+  <div>
+    <h2 align="center" class=ttl1>Adicione novos ativos!</h2>
   </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Identificador</th>
-        <th>Local</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody id="doadores">
+  <div align="center">
+    <div class="centerList">
+      <div class="RLpadding10">
+        <div class="row">
+          <label>Nome: </label>
+          <input class="inputlarge" type="text" id="nome"></input>
+        </div>
+        <br>
+        <div class="row">
+          <label>Id: </label>
+          <input class="inputlarge" type="text" id="nome"></input>
+        </div>
+        <br>
+        <div class="row">
+          <label id="locais_e">Tipo: </label>
+          <select class="inputlarge">
+            <option selected disabled>Selecione</option>
+            <option>Notebooks</option>
+            <option>Ipads</option>
+            <option>Apple pencil</option>
+            <option>Cadeiras</option>
+            <option>Mesas</option>
+          </select>
+          <br>
+        </div>
+      </div>
+      Propriedade Beacon?
+      <div class="row">
+        <center>
+          <input type="radio" id="Sim" value="Sim">
+          <label for="Sim">Sim</label>
 
-    </tbody>
+          <input type="radio" id="Nao" value="Nao">
+          <label for="Nao">Não</label>
+        </center>
+      </div>
 
-  </table>
-  <br>
-  <br><br><br>
+    </div>
+  </div>
+
   <center>
-    <button class="buttonLog">Baixar</button>
+    <button class="buttonLog">Criar</button>
   </center>
-  <script src="./script.js"></script>
-  <!-- Script sidebar -->
-  <script src="js/sidebar.js"></script>
+
 </body>
 
 </html>
