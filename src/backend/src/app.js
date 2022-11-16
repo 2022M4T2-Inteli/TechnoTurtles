@@ -8,6 +8,7 @@ app.use(express.json());
 import {router} from './routes.js';
 app.use(router);
 
+//LOADS CSS AND JS FILES (DON'T FORGET)
 app.use(express.static('frontend'));
 
 createTable();
