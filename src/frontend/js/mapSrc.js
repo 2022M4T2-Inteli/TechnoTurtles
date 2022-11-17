@@ -4,19 +4,22 @@ $(() => {
     maxZoomFactor: 4,
     projection: {
       to(coordinates) {
-        return [coordinates[0] / 100, coordinates[1] / 100];
+        return [coordinates[0] / 500, coordinates[1] / 500];
       },
 
       from(coordinates) {
-        return [coordinates[0] * 100, coordinates[1] * 100];
+        return [coordinates[0] * 500, coordinates[1] * 500];
       },
     },
     layers: [{
       hoverEnabled: false,
       dataSource: buildingData,
       name: 'building',
-    }, {
-      color: 'transparent',
+    },
+    {
+      color: 'orange',
+      opacity: '40%',
+      onclick() { alert("") },
       borderWidth: 1,
       label: {
         enabled: true,
@@ -29,7 +32,7 @@ $(() => {
       enabled: true,
       customizeTooltip(arg) {
         if (arg.layer.name === 'rooms') {
-          return { text: `Square: ${arg.attribute('square')} ft&#178` };
+          return { text: `Aparelhos na área: ${arg.attribute('devNum')} aparelho` };
         }
         return null;
       },

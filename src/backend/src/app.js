@@ -6,12 +6,15 @@ import express from 'express';
 const app = express();
 app.use(express.json());
 
-import {routes} from './routes.js';
-app.use(routes);
+import {router} from './routes.js';
+app.use(router);
+
+//LOADS CSS AND JS FILES (DON'T FORGET)
+app.use(express.static('../frontend'));
 
 createTable();
 
-const port = 3000;
+const PORT = 3000;
 
 app.get('/', function(req, res){
     res.send('Hello World');
@@ -29,8 +32,9 @@ app.get('/devices', async function(req, res){
     res.json(devices);
 })
 
-app.get('/device', async function(req, res){
-    let device = await selectDevice(req.body.id);
+app.get('/device/:id', async function(req, res){
+    let id = req.params.id;
+    let device = await selectDevice(id);
     res.json(device);
 })
 

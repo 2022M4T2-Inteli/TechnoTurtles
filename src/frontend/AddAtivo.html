@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet"
@@ -109,63 +110,57 @@
   </div>
 
   <header>
-    <div class="search">
-      <br><br><br>
-      <i class="bi bi-search"></i>
-      <input onkeyup="searchFilter()" class="inputlarge" type="search" placeholder="Search">
-    </div>
+
   </header>
 
+  <div>
+    <h2 align="center" class=ttl1>Adicione novos ativos!</h2>
+  </div>
 
-    
-    <div class="imgTxt4">
-      <div></div>
-      <div class="centerList">
-        <br><div class="ladinho"></div>
-        <!-- <i class="bi bi-triangle-fill"></i>
-    
-        <label id="locais_e">Escolha o Ativo: </label> -->
-        <select class="inputlarge">
-          <option selected disabled>Escolha o Ativo</option>
-          <option>Notebooks</option>
-          <option>Ipads</option>
-          <option>Apple pencil</option>
-          <option>Cadeiras</option>
-          <option>Mesas</option>
-        </select>
+  <div align="center">
+    <div class="centerList">
+      <div class="RLpadding10">
+        <div class="row">
+          <label>Nome: </label>
+          <input class="inputlarge" type="text" id="nome"></input>
+        </div>
+        <br>
+        <div class="row">
+          <label>Id: </label>
+          <input class="inputlarge" type="text" id="nome"></input>
+        </div>
+        <br>
+        <div class="row">
+          <label id="locais_e">Tipo: </label>
+          <select class="inputlarge">
+            <option selected disabled>Selecione</option>
+            <option>Notebooks</option>
+            <option>Ipads</option>
+            <option>Apple pencil</option>
+            <option>Cadeiras</option>
+            <option>Mesas</option>
+          </select>
+          <br>
+        </div>
+      </div>
+      Propriedade Beacon?
+      <div class="row">
+        <center>
+          <input type="radio" id="Sim" value="Sim">
+          <label for="Sim">Sim</label>
+
+          <input type="radio" id="Nao" value="Nao">
+          <label for="Nao">Não</label>
+        </center>
       </div>
 
+    </div>
   </div>
-  
 
-  <div class="m-2 col-12 col-md-11 mx-auto fs-3 d-flex align-items-center justify-content-center">
-    <table class="table col-10" id="myTable">
-      <thead>
-        <tr>
-          <th class="fs-6">id</th>
-          <th class="fs-6">Tipo</th>
-          <th class="fs-6">Patrimônio</th>
-          <th class="fs-6 d-none d-md-table-cell">Sala</th>
-          <th class="fs-6">Mais Informações</th>
-        </tr>
-      </thead>
-
-      <tbody id="resultado">
-      </tbody>
-    </table>
-  </div>
-  <br>
-  <br><br><br>
   <center>
-    <button class="buttonLog">Baixar relatório</button>
+    <button class="buttonLog">Criar</button>
   </center>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./js/relatorio.js"></script>
-  <!-- Script sidebar -->
-  <script src="js/sidebar.js"></script>
+
 </body>
 
 </html>
