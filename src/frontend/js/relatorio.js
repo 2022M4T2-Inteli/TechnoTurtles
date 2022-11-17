@@ -16,7 +16,6 @@ const getDevices = () => {
 
         renderAdmins(devices);
 
-        console.log(devices);    
         return response.data;
     })
     .catch((e) => console.error(e));
