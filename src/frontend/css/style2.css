@@ -146,7 +146,7 @@ h6.ttl1 {
     font-weight: 900;
 }
 
-p.txt1 {
+p.txt1 , option{
     font-family: 'DM Sans';
     color: #767676;
     margin: 0;
@@ -158,6 +158,9 @@ p.txt2 {
     color: #000000;
     margin: 0;
     font-size: xx-large;
+}
+.padding{
+    padding-left: 0%;
 }
 
 .imgTxt1 {
@@ -188,6 +191,9 @@ p.txt2 {
 .imgTxt4 {
     display: flex;
     padding-top: 8vh;
+    justify-content: space-between;
+    padding-right: 15%;
+
 }
 
 
@@ -322,6 +328,9 @@ div.card2:hover {
 
 .Img3 {
     padding: 50px 20px 30px 20px;
+}
+.ladinho{
+    padding-left: 10%;
 }
 
 button.marg {
