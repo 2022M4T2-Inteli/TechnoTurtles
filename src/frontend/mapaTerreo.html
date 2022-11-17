@@ -101,42 +101,47 @@
   <header>
     <!-- search div  -->
     <div class="row">
-      <div class="col-sm-12">
-        <div class="search">
-          <i class="bi bi-search"></i>
-          <input onkeyup="searchFilter()" class="inputSearch" type="search" id="inputSearchID" placeholder="Search">
-        </div>
+      <div class="search">
+        <br><br><br>
+        <i class="bi bi-search"></i>
+        <input onkeyup="searchFilter()" class="inputlarge" type="search" placeholder="Search">
       </div>
     </div>
+    <br><br><br>
     <!-- other functions row  -->
     <div class="boxRow justSpcEvly">
     </div>
 
     <section class="container space-between">
       <div class="centerList">
+        
+      </div>
+      <div  class="imgTxt1">
         <select class="inputlarge">
-          <option selected disabled>Selecione o ativo</option>
+          <option selected disabled>Escolha o ativo</option>
           <option>Notebooks</option>
           <option>Ipads</option>
           <option>Apple pencil</option>
           <option>Cadeiras</option>
           <option>Mesas</option>
         </select>
+        <div class="padding"></div>
+
+        <div> </div>
+        <div class="centerList">
+          <button onclick="changeFloor(0)" class="map 0">Terreo</button>
+        </div>
+        <div class="centerList">
+          <button onclick="changeFloor(1)" class="map 1">Andar 1</button>
+        </div>
+        <div class="centerList">
+          <button onclick="changeFloor(2)" class="map 2">Andar 2</button>
+        </div>
+        <div> </div>
       </div>
-      <div> </div>
-      <div class="centerList">
-        <button onclick="changeFloor(0)" class="map 0">Terreo</button>
-      </div>
-      <div class="centerList">
-        <button onclick="changeFloor(1)" class="map 1">Andar 1</button>
-      </div>
-      <div class="centerList">
-        <button onclick="changeFloor(2)" class="map 2">Andar 2</button>
-      </div>
-      <div> </div>
-      <div class="centerList">
+      <!-- <div class="centerList">
         <button class="buttonLog">Relatórios</button>
-      </div>
+      </div> -->
       <div> </div>
     </section>
 
@@ -154,6 +159,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="./js/sidebar.js"></script>
 </body>
