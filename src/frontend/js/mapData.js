@@ -1,5 +1,5 @@
 const resX = 800;
-const resY = 300;
+const resY = 400;
 
 const buildingData = {
     type: 'FeatureCollection',
@@ -85,12 +85,12 @@ const buildingData = {
                     [536 - resX, -475 + resY],
                     [351 - resX, -475 + resY],
                     [351 - resX, -600 + resY],
-                    [820 - resX, -600 + resY],
-                    [820 - resX, -475 + resY],
+                    [828 - resX, -600 + resY],
+                    [828 - resX, -475 + resY],
                     [588 - resX, -475 + resY],
                     [588 - resX, -416 + resY],
-                    [820 - resX, -416 + resY],
-                    [820 - resX, -475 + resY],
+                    [828 - resX, -416 + resY],
+                    [828 - resX, -475 + resY],
                     [789 - resX, -475 + resY],
                     [789 - resX, -416 + resY],
                     [750 - resX, -416 + resY],
@@ -101,8 +101,8 @@ const buildingData = {
                     [672 - resX, -475 + resY],
                     [633 - resX, -475 + resY],
                     [633 - resX, -416 + resY],
-                    [820 - resX, -416 + resY],
-                    [820 - resX, -600 + resY],
+                    [828 - resX, -416 + resY],
+                    [828 - resX, -600 + resY],
                     [885 - resX, -600 + resY],
                     [885 - resX, -416 + resY],
                     [1106 - resX, -416 + resY],
@@ -335,6 +335,118 @@ const roomsData = {
                     [536 - resX, -475 + resY],
                     [476 - resX, -475 + resY],
                     [476 - resX, -416 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Cantina sla',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [536 - resX, -350 + resY],
+                    [536 - resX, -221 + resY],
+                    [437 - resX, -221 + resY],
+                    [437 - resX, -350 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 5',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [588 - resX, -475 + resY],
+                    [588 - resX, -416 + resY],
+                    [633 - resX, -416 + resY],
+                    [633 - resX, -475 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 6',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [672 - resX, -416 + resY],
+                    [672 - resX, -475 + resY],
+                    [633 - resX, -475 + resY],
+                    [633 - resX, -416 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 7',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [711 - resX, -475 + resY],
+                    [711 - resX, -416 + resY],
+                    [672 - resX, -416 + resY],
+                    [672 - resX, -475 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 8',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [750 - resX, -475 + resY],
+                    [750 - resX, -416 + resY],
+                    [711 - resX, -416 + resY],
+                    [711 - resX, -475 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 9',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [750 - resX, -475 + resY],
+                    [750 - resX, -416 + resY],
+                    [789 - resX, -416 + resY],
+                    [789 - resX, -475 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'SEM 10',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [828 - resX, -475 + resY],
+                    [828 - resX, -416 + resY],
+                    [789 - resX, -416 + resY],
+                    [789 - resX, -475 + resY],
                 ]],
             },
         },

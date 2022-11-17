@@ -4,19 +4,22 @@ $(() => {
     maxZoomFactor: 4,
     projection: {
       to(coordinates) {
-        return [coordinates[0] / 750, coordinates[1] / 750];
+        return [coordinates[0] / 500, coordinates[1] / 500];
       },
 
       from(coordinates) {
-        return [coordinates[0] * 75, coordinates[1] * 100];
+        return [coordinates[0] * 500, coordinates[1] * 500];
       },
     },
     layers: [{
       hoverEnabled: false,
       dataSource: buildingData,
       name: 'building',
-    }, {
-      color: 'transparent',
+    },
+    {
+      color: 'orange',
+      opacity: '40%',
+      onclick() { alert("") },
       borderWidth: 1,
       label: {
         enabled: true,
