@@ -36,11 +36,8 @@ const renderAdmins = (list) => {
           <td class="fs-6">${tipo}</td>
           <td class="fs-6">${patrimonio}</td>
           <td class="fs-6 d-none d-md-table-cell">${sala}</td>
-          <td class="fs-6"><button class="buttonLog" id="${id}">Clique</button></td>
           </tr>`;
         })
       : (table.innerHTML = ``);
   };
-  
-
   
