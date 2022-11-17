@@ -4,11 +4,11 @@ $(() => {
     maxZoomFactor: 4,
     projection: {
       to(coordinates) {
-        return [coordinates[0] / 100, coordinates[1] / 100];
+        return [coordinates[0] / 750, coordinates[1] / 750];
       },
 
       from(coordinates) {
-        return [coordinates[0] * 100, coordinates[1] * 100];
+        return [coordinates[0] * 75, coordinates[1] * 100];
       },
     },
     layers: [{
@@ -29,7 +29,7 @@ $(() => {
       enabled: true,
       customizeTooltip(arg) {
         if (arg.layer.name === 'rooms') {
-          return { text: `Square: ${arg.attribute('square')} ft&#178` };
+          return { text: `Aparelhos na área: ${arg.attribute('devNum')} aparelho` };
         }
         return null;
       },
