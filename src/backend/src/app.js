@@ -86,6 +86,6 @@ app.post('/test_device', function(req, res){
 
 //---------------------------------------------------------------------------------------
 
-app.listen(port, function(){
-    console.log('Api rodando na porta ' + port);
+app.listen(PORT, function(){
+    console.log('http://localhost:' + PORT);
 });
