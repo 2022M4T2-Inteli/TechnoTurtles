@@ -83,7 +83,8 @@ img:hover {
 }
 
 #vector-map {
-    height: 460px;
+    height: 360px;
+    width: 760px;
 }
 
 div.pargph {
@@ -336,7 +337,6 @@ button.map {
     font-weight: 600;
     align-self: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.250);
-    /* box-shadow: 0px 5px 10px #ebebeb; */
     transition: transform 0.3s ease;
     margin: 8px;
     opacity: 44%;
@@ -368,10 +368,13 @@ footer div ul {
     justify-content: space-evenly;
 }
 
+#map {
+    width: 800px
+}
+
 .map {
-    padding-top: 15px;
     border: 2px;
-    width: 98%;
+    width: 120px;
 }
 
 input {
@@ -457,7 +460,6 @@ div.centerList {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 30px;
 }
 
 .inputlarge {
@@ -498,9 +500,9 @@ div.centerList {
 /* Flex Container */
 .container {
     max-width: 98%;
+    max-height: 100px;
     margin: 0 auto;
     display: flex;
-    border: 1px solid #ccc;
 }
 
 .column {
@@ -566,12 +568,6 @@ div.centerList {
     .Img4 {
         width: 60% !important;
     }
-
-    #map {
-        height: 60vh;
-        width: 50vw;
-    }
-
 
     .imgTxt1 {
         padding-top: 7vh;
@@ -797,11 +793,6 @@ div.centerList {
         display: none;
     }
 
-    #map {
-        height: 40vh;
-        width: 90vw;
-    }
-
     .imgsr {
         display: flex;
         padding: auto;
@@ -915,7 +906,7 @@ div.centerList {
     font-family: Poppins;
     font-weight: 600;
     font-size: large;
-    width: 80%;
+    width: 180px;
     align-self: center;
     box-shadow: 0px 0px 5px #ebebeb;
     transition: transform 0.3s ease;
