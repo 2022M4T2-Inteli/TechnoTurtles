@@ -36,10 +36,7 @@
     scroll-behavior: smooth;
 }
 
-.fa-file-circle-plus {
-    color: #f2f2f2;
 
-}
 
 .bolinhas {
     border: 0;
@@ -177,7 +174,7 @@ p.txt2 {
     flex-wrap: wrap;
 }
 
-.imglogin {
+.imglogin{
     width: 48%;
 }
 
@@ -900,8 +897,7 @@ div.centerList {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
-.teste {
+.teste{
     padding-top: 6%;
 }
 
