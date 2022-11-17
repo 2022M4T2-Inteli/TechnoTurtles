@@ -450,5 +450,165 @@ const roomsData = {
                 ]],
             },
         },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Escadas',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [1013 - resX, -350 + resY],
+                    [954 - resX, -350 + resY],
+                    [954 - resX, -321 + resY],
+                    [1013 - resX, -321 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 5',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [1044 - resX, -321 + resY],
+                    [1013 - resX, -321 + resY],
+                    [1013 - resX, -350 + resY],
+                    [1044 - resX, -350 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 6',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [1075 - resX, -321 + resY],
+                    [1044 - resX, -321 + resY],
+                    [1044 - resX, -350 + resY],
+                    [1075 - resX, -350 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 7',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [1075 - resX, -321 + resY],
+                    [1106 - resX, -321 + resY],
+                    [1106 - resX, -350 + resY],
+                    [1075 - resX, -350 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Bath 2',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [954 - resX, -321 + resY],
+                    [885 - resX, -321 + resY],
+                    [885 - resX, -350 + resY],
+                    [954 - resX, -350 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 8',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [918 - resX, -416 + resY],
+                    [885 - resX, -416 + resY],
+                    [885 - resX, -452 + resY],
+                    [918 - resX, -452 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 9',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [918 - resX, -491 + resY],
+                    [885 - resX, -491 + resY],
+                    [885 - resX, -452 + resY],
+                    [918 - resX, -452 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Sala 11 ',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [918 - resX, -566 + resY],
+                    [885 - resX, -566 + resY],
+                    [885 - resX, -491 + resY],
+                    [918 - resX, -491 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Artes 1 e 2',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [918 - resX, -553 + resY],
+                    [988 - resX, -553 + resY],
+                    [988 - resX, -491 + resY],
+                    [918 - resX, -491 + resY],
+                ]],
+            },
+        },
+        {
+            type: 'Feature',
+            properties: {
+                name: 'Artes 3 e 4',
+                devNum: 0,
+            },
+            geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                    [1057 - resX, -553 + resY],
+                    [988 - resX, -553 + resY],
+                    [988 - resX, -491 + resY],
+                    [1057 - resX, -491 + resY],
+                ]],
+            },
+        },
     ],
 };
