@@ -1,5 +1,6 @@
 import { openDb } from './configDB.js';
 import { createTable, insertDevice, updateDevice, selectDevices, selectDevice, deleteDevice  } from './Controller/device.js';
+import fetch from "node-fetch";
 
 import express from 'express';
 const app = express();
@@ -62,6 +63,24 @@ app.delete('/device', async function(req, res){
         "msg": "Deletado com sucesso"
     });
 })
+
+//-------------------------------------------------------------------------------------
+
+app.get('/test_device', async (req, res) => {
+    const devices = await fetch('http://10.128.65.109/list_devices').then(data => {
+        return data.json();
+    });
+    /*Tratar os dados aqui*/
+    res.json(devices);
+});
+
+
+app.post('/test_device', function(req, res){
+    console.log(req.body);
+    res.send('ok');
+});
+
+//---------------------------------------------------------------------------------------
 
 app.listen(port, function(){
     console.log('Api rodando na porta ' + port);
