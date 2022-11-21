@@ -1,5 +1,5 @@
 import { openDb } from './configDB.js';
-import { createTable, insertDevice, updateDevice, selectDevices, selectDevice, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr  } from './Controller/device.js';
+import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr  } from './Controller/device.js';
 import fetch from "node-fetch";
 
 import express from 'express';
