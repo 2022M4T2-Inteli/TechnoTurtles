@@ -146,7 +146,8 @@ h6.ttl1 {
     font-weight: 900;
 }
 
-p.txt1 , option{
+p.txt1,
+option {
     font-family: 'DM Sans';
     color: #767676;
     margin: 0;
@@ -159,7 +160,8 @@ p.txt2 {
     margin: 0;
     font-size: xx-large;
 }
-.padding{
+
+.padding {
     padding-left: 0%;
 }
 
@@ -177,7 +179,7 @@ p.txt2 {
     flex-wrap: wrap;
 }
 
-.imglogin{
+.imglogin {
     width: 48%;
 }
 
@@ -329,7 +331,8 @@ div.card2:hover {
 .Img3 {
     padding: 50px 20px 30px 20px;
 }
-.ladinho{
+
+.ladinho {
     padding-left: 10%;
 }
 
@@ -471,7 +474,7 @@ input {
 }
 
 .inputSearch {
-    width: 50%;
+    width: 100%;
     height: 200%;
     font-size: 15px;
 }
@@ -485,11 +488,11 @@ div.centerList {
 }
 
 .inputlarge {
+    width: 225vw;
     font-family: "Poppins", sans-serif;
     outline: 0;
     background: #bcbcbc;
     /* background: #D14949; */
-    width: 400px;
     border: 1px;
     border-radius: 12px;
     margin: 0 0 15px;
@@ -906,7 +909,8 @@ div.centerList {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.teste{
+
+.teste {
     padding-top: 6%;
 }
 

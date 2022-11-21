@@ -83,6 +83,13 @@
         <span class="tooltip">Mapa</span>
       </li>
       <li>
+        <a href="/novo-ativo">
+          <i class="bi bi-folder-plus"></i>
+          <span class="links_name">Adicionar ativo</span>
+        </a>
+        <span class="tooltip">Adicionar ativo</span>
+      </li>
+      <li>
         <a href="./Config.html">
           <i class="bi bi-person-fill"></i>
           <span class="links_name">Configurações</span>
@@ -117,26 +124,36 @@
   </header>
 
 
-    
-    <div class="imgTxt4">
-      <div></div>
-      <div class="centerList">
-        <br><div class="ladinho"></div>
-        <!-- <i class="bi bi-triangle-fill"></i>
+
+  <div class="imgTxt4">
+    <div></div>
+    <a href="./loginBeacon.html">
+      <button class="buttonLog">Adicionar Ativo</button>
+    </a>
+    <div class="centerList">
+      <br>
+
+      <div class="ladinho"></div>
+      <!-- <i class="bi bi-triangle-fill"></i>
     
         <label id="locais_e">Escolha o Ativo: </label> -->
-        <select class="inputlarge">
-          <option selected disabled>Escolha o Ativo</option>
-          <option>Notebooks</option>
-          <option>Ipads</option>
-          <option>Apple pencil</option>
-          <option>Cadeiras</option>
-          <option>Mesas</option>
-        </select>
-      </div>
+      <select class="inputlarge">
+        <option selected disabled>Escolha o Ativo</option>
+        <option>Notebooks</option>
+        <option>Ipads</option>
+        <option>Apple pencil</option>
+        <option>Cadeiras</option>
+        <option>Mesas</option>
+      </select>
+
+    </div>
+
 
   </div>
-  
+
+
+
+
 
   <div class="m-2 col-12 col-md-11 mx-auto fs-3 d-flex align-items-center justify-content-center">
     <table class="table col-10" id="myTable">
@@ -162,8 +179,8 @@
     <button class="buttonLog">Baixar relatório</button>
   </center>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"></script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./js/relatorio.js"></script>
   <!-- Script sidebar -->
