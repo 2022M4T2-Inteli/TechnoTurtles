@@ -1,5 +1,5 @@
 import { openDb } from './configDB.js';
-import { createTable, insertDevice, updateDevice, selectDevices, selectDevice, deleteDevice  } from './Controller/device.js';
+import { createTable, insertDevice, updateDevice, selectDevices, selectDevice, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr  } from './Controller/device.js';
 import fetch from "node-fetch";
 
 import express from 'express';
@@ -75,7 +75,8 @@ app.get('/test_device', async (req, res) => {
         return data.json();
     });
     /*Tratar os dados aqui*/
-    res.json(devices);
+    //res.json(devices);
+    updateStatusfromAddr(devices);
 });
 
 
