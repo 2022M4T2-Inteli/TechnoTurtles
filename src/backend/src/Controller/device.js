@@ -3,8 +3,9 @@ import { openDb } from "../configDB.js";
 
 export async function updateDeviceFromJson(json){
     const obj = JSON.parse(json);
-    for(i = 0; i < obj.length; i++){
-        updateStatusfromAddr(obj.i);
+    console.log(obj[0]);
+    for(let i = 0; i <= obj.length; i++){
+        updateStatusfromAddr(obj[i]);
     }
 }
 
@@ -25,7 +26,7 @@ export async function selectDevices(req, res){
 
 export async function updateStatusfromAddr(addr){
     openDb().then(db=>{
-        db.run('UPDATE Devices SET status = "Encontrado", localizacao=1 WHERE endereco = ' + addr);
+        db.run('UPDATE Devices SET status = "ENCONTRADO", localizacao=1 WHERE endereco = "' + addr + '"');
     });
 }
 

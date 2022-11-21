@@ -76,7 +76,13 @@ app.get('/test_device', async (req, res) => {
     });
     /*Tratar os dados aqui*/
     //res.json(devices);
-    updateStatusfromAddr(devices);
+    const obj = JSON.parse(devices);
+    for(let i = 0; i <= obj.length; i++){
+        updateStatusfromAddr(obj[i]);
+    }
+    res.json({
+        "statusCode": 200
+    });
 });
 
 
