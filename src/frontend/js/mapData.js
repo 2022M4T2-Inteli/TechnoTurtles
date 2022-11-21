@@ -229,7 +229,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 1',
+                name: 'localizacao 1',
                 devNum: 0,
             },
             geometry: {
@@ -245,7 +245,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 2',
+                name: 'localizacao 2',
                 devNum: 0,
             },
             geometry: {
@@ -261,7 +261,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 3',
+                name: 'localizacao 3',
                 devNum: 0,
             },
             geometry: {
@@ -469,7 +469,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 5',
+                name: 'localizacao 5',
                 devNum: 0,
             },
             geometry: {
@@ -485,7 +485,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 6',
+                name: 'localizacao 6',
                 devNum: 0,
             },
             geometry: {
@@ -501,7 +501,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 7',
+                name: 'localizacao 7',
                 devNum: 0,
             },
             geometry: {
@@ -533,7 +533,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 8',
+                name: 'localizacao 8',
                 devNum: 0,
             },
             geometry: {
@@ -549,7 +549,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 9',
+                name: 'localizacao 9',
                 devNum: 0,
             },
             geometry: {
@@ -565,7 +565,7 @@ const roomsData = {
         {
             type: 'Feature',
             properties: {
-                name: 'Sala 11 ',
+                name: 'localizacao 11 ',
                 devNum: 0,
             },
             geometry: {

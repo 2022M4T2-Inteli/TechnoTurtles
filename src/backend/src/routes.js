@@ -22,3 +22,7 @@ router.get("/relatorio", (req, res) => {
 router.get("/mapa", (req, res) =>  {
   res.sendFile(path.join(__dirname, "../frontend/mapaTerreo.html"));
   });
+
+router.get("/novo-ativo", (req, res) =>  {
+  res.sendFile(path.join(__dirname, "../frontend/AddAtivo.html"));
+  });
