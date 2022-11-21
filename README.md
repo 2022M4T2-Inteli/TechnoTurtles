@@ -26,29 +26,29 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 | <b>imagens</b>
 
 |--> <b>documentos</b> </br>
-    |--> <b> Sprint 1</b> </br>
-        |--> <b> IoTDoc </b> </br>
-            |--> T2_G4_V1_IoT_Document.pdf </br>
-            |--> T2_G4_V1_IoT_Document.docx </br>
-        |-->  | T2_G5_V1_Apresentação.pdf </br>
-    |--> <b> Sprint 2</b> </br>
-        |--> <b> IoTDoc </b> </br>
-            |--> T2_G4_V2_IoT_Document.pdf </br>
-            |--> T2_G4_V2_IoT_Document.docx </br>
-        |-->  | T2_G5_V2_Apresentação.pdf </br>
-    |--> <b> Sprint 3</b> </br>
-        |--> <b> IoTDoc </b> </br>
-            |--> T2_G4_V3_IoT_Document.pdf </br>
-            |--> T2_G4_V3_IoT_Document.docx </br>
-        |--> <b> Manual </b> </br>
-            |--> T2_G4_V1_Manual.pdf </br>
-            |--> T2_G4_V1_Manual.docx </br>
-        |-->  | T2_G5_V1_Apresentação.pdf </br>
+|----> <b> Sprint 1</b> </br>
+|------> <b> IoTDoc </b> </br>
+|--------> | T2_G4_V1_IoT_Document.pdf </br>
+|--------> | T2_G4_V1_IoT_Document.docx </br>
+|------>  | T2_G5_V1_Apresentação.pdf </br>
+|----> <b> Sprint 2</b> </br>
+|------> <b> IoTDoc </b> </br>
+|--------> | T2_G4_V2_IoT_Document.pdf </br>
+|--------> | T2_G4_V2_IoT_Document.docx </br>
+|------>  | T2_G5_V2_Apresentação.pdf </br>
+|----> <b> Sprint 3</b> </br>
+|------> <b> IoTDoc </b> </br>
+|--------> | T2_G4_V3_IoT_Document.pdf </br>
+|--------> | T2_G4_V3_IoT_Document.docx </br>
+|------> <b> Manual </b> </br>
+|--------> | T2_G4_V1_Manual.pdf </br>
+|--------> | T2_G4_V1_Manual.docx </br>
+|------>  | T2_G5_V1_Apresentação.pdf </br>
 
 |--> <b>src</b> </br>
-    |--> <b> frontend </b> </br>
-    |--> <b> backend </b> </br>
-    |--> <b> hardware </b> </br>
+|----> | <b> frontend </b> </br>
+|----> | <b> backend </b> </br>
+|----> | <b> hardware </b> </br>
 
 Dentre os arquivos presentes na raiz do projeto, definem-se:
 <ul>
