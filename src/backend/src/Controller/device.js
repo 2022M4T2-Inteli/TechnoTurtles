@@ -1,6 +1,13 @@
 import { openDb } from "../configDB.js";
 
 
+export async function updateDeviceFromJson(json){
+    const obj = JSON.parse(json);
+    for(i = 0; i < obj.length; i++){
+        updateStatusfromAddr(obj.i);
+    }
+}
+
 //create table
 export async function createTable(){
     openDb().then(db=>{
@@ -16,10 +23,16 @@ export async function selectDevices(req, res){
     });
 }
 
+export async function updateStatusfromAddr(addr){
+    openDb().then(db=>{
+        db.run('UPDATE Devices SET status = "Encontrado", localizacao=1 WHERE endereco = ' + addr);
+    });
+}
+
 //get device by id
-export async function selectDevice(id){
+export async function selectDevicefromAddr(addr){
     return openDb().then(async (db) => {
-        const res = await db.get('SELECT * FROM Devices WHERE id=?', [id]);
+        const res = await db.get('SELECT * FROM Devices WHERE endereco=?', [addr]);
         return res;
     });
 }
