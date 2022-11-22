@@ -14,7 +14,7 @@ const getDevices = () => {
 
       document.getElementById("resultado").innerHTML = "";
 
-      renderAdmins(devices);
+      renderDevices(devices);
 
       return response.data;
     })
@@ -23,7 +23,8 @@ const getDevices = () => {
 
 getDevices();
 
-const renderAdmins = (list) => {
+//table render devices on the screen
+const renderDevices = (list) => {
   const table = document.getElementById("resultado");
 
   list.length > 0
@@ -77,7 +78,7 @@ const modal = (device) => {
           <label for="exampleInputEmail1" class="fs-4">Patrimônio</label>
           <div class="d-flex flex-row justify-content-between">
             <div class='col-12'>
-              <input class="form-control border" id="adminDonation${id}" disabled=true value="${patrimonio}"></input>
+              <input class="form-control border" id="patrimonio${id}" disabled=true value="${patrimonio}"></input>
             </div>
           </div>
         </div>
@@ -87,7 +88,7 @@ const modal = (device) => {
           <label for="exampleInputEmail1" class="fs-4">Localização</label>
           <div class="d-flex flex-row justify-content-between">
             <div class='col-12'>
-              <input class="form-control border" id="adminDate${id}" disabled=true value="${localizacao}"></input>
+              <input class="form-control border" id="localizacao${id}" disabled=true value="${localizacao}"></input>
             </div>
           </div>
         </div>
@@ -98,7 +99,7 @@ const modal = (device) => {
           <label for="exampleInputEmail1" class="fs-4">Endereço</label>
           <div class="d-flex flex-row justify-content-between">
             <div class='col-12'>
-              <input class="form-control border" id="adminContact${id}" disabled=true value="${endereco}"></input>
+              <input class="form-control border" id="endereco${id}" disabled=true value="${endereco}"></input>
             </div>
           </div>
         </div>
@@ -108,7 +109,7 @@ const modal = (device) => {
           <label for="exampleInputEmail1" class="fs-4">Status</label>
           <div class="d-flex flex-row justify-content-between">
             <div class='col-12'>
-              <input class="form-control border" id="adminPassword${id}" value="${status}" disabled=true></input>
+              <input class="form-control border" id="status${id}" value="${status}" disabled=true></input>
             </div>
           </div>
         </div>
@@ -127,36 +128,35 @@ const modal = (device) => {
         <div class="modal-footer">
         
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning mx-auto" onclick="updateDevice(${id});" id="updateButton${id}" data-bs-dismiss="modal" disabled='true'>Atualizar</button>
         </div>
       </div>
     </div>
   </div>`;
 };
 
-const updateAdmin = (id) => {
+const updateDevice = (id) => {
   if (confirm("Deseja mesmo atualizar os dados?")) {
-    let name = document.getElementById("tipo" + id);
-    let type = document.getElementById("adminType" + id);
-    let donation = document.getElementById("adminDonation" + id);
-    let date = document.getElementById("adminDate" + id);
-    let contact = document.getElementById("adminContact" + id);
-    let status = document.getElementById("adminStatus" + id);
+    let tipo = document.getElementById("tipo" + id);
+    let patrimonio = document.getElementById("patrimonio" + id);
+    let endereco = document.getElementById("endereco" + id);
+    let status = document.getElementById("status" + id);
+    let localizacao = document.getElementById("localizacao" + id);
 
-    let updatedAdmin = {
-      name: name.value,
-      type: type.value,
-      donation: donation.value,
-      date: date.value,
-      contact: contact.value,
+
+    let updatedDevice = {
+      tipo: tipo.value,
+      patrimonio: patrimonio.value,
+      endereco: endereco.value,
       status: status.value,
+      localizacao: localizacao.value,
       id: id,
     };
 
     axios
-      .put(url + `/api/admin/${id}`, updatedAdmin)
+      .put(url + `/device/${id}`, updatedDevice)
       .then((response) => {
-        getAdmins();
+        getDevices();
       })
       .catch((e) => console.error(e));
   } else {
@@ -167,10 +167,9 @@ const updateAdmin = (id) => {
 const toggleInputs = (number) => {
   let ids = [
     "tipo",
-    "adminDonation",
-    "adminDate",
-    "adminContact",
-    "adminPassword",
+    "patrimonio",
+    "endereco",
+    "status",
     "updateButton",
   ];
   let buttonText = document.getElementById(`btnText${number}`);

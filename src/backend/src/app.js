@@ -45,7 +45,7 @@ app.post('/device', function(req, res){
     });
 });
 
-app.put('/device', function(req, res){
+app.put('/device/:id', function(req, res){
     if(req.body && !req.body.id){
         res.json({
             "statusCode" : "400",
