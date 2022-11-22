@@ -4,19 +4,19 @@ const url = `http://localhost:${PORT}`;
 //table get devices
 
 const getDevices = () => {
-    axios
-        .get(url + `/devices`)
-        .then((response) => {
-            const devices = [];
-            response.data.forEach((device) => {
-                devices.push(device);
-            });
+  axios
+    .get(url + `/devices`)
+    .then((response) => {
+      const devices = [];
+      response.data.forEach((device) => {
+        devices.push(device);
+      });
 
-        document.getElementById("resultado").innerHTML = "";
+      document.getElementById("resultado").innerHTML = "";
 
-        renderAdmins(devices);
+      renderAdmins(devices);
 
-        return response.data;
+      return response.data;
     })
     .catch((e) => console.error(e));
 };
@@ -24,13 +24,13 @@ const getDevices = () => {
 getDevices();
 
 const renderAdmins = (list) => {
-    const table = document.getElementById("resultado");
-  
-    list.length > 0
-      ? list.map((device) => {
-          const { id, tipo, patrimonio, localizacao, endereco, status} = device;
-  
-          table.innerHTML += `
+  const table = document.getElementById("resultado");
+
+  list.length > 0
+    ? list.map((device) => {
+      const { id, tipo, patrimonio, localizacao, endereco, status } = device;
+
+      table.innerHTML += `
           <tr data-bs-toggle="modal" data-bs-target="exampleModal${id}" id="tableRow">
           <td class="fs-6">${id}"</td>
           <td class="fs-6">${tipo}</td>
@@ -43,15 +43,15 @@ const renderAdmins = (list) => {
 
         ${modal(device)}
         `;
-      })
+    })
     : (table.innerHTML = ``);
 };
 
 //ADMIN MODAL edit
 
 const modal = (device) => {
-    const { id, tipo, patrimonio, localizacao, endereco, status} = device;
-  return  `
+  const { id, tipo, patrimonio, localizacao, endereco, status } = device;
+  return `
   <!-- Modal -->
   <div class="modal fade" id="exampleModal${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -67,7 +67,7 @@ const modal = (device) => {
           <label for="exampleInputEmail1" class="fs-4">Tipo</label>
           <div class="d-flex flex-row justify-content-between">
             <div class='col-12'>
-              <input class="form-control border" id="adminName${id}" disabled=true value="${tipo}"..."></input>
+              <input class="form-control border" id="tipo${id}" disabled=true value="${tipo}"..."></input>
             </div>
           </div>
         </div>
@@ -133,6 +133,53 @@ const modal = (device) => {
     </div>
   </div>`;
 };
-;
-  
-  
+
+const updateAdmin = (id) => {
+  if (confirm("Deseja mesmo atualizar os dados?")) {
+    let name = document.getElementById("tipo" + id);
+    let type = document.getElementById("adminType" + id);
+    let donation = document.getElementById("adminDonation" + id);
+    let date = document.getElementById("adminDate" + id);
+    let contact = document.getElementById("adminContact" + id);
+    let status = document.getElementById("adminStatus" + id);
+
+    let updatedAdmin = {
+      name: name.value,
+      type: type.value,
+      donation: donation.value,
+      date: date.value,
+      contact: contact.value,
+      status: status.value,
+      id: id,
+    };
+
+    axios
+      .put(url + `/api/admin/${id}`, updatedAdmin)
+      .then((response) => {
+        getAdmins();
+      })
+      .catch((e) => console.error(e));
+  } else {
+    return;
+  }
+};
+
+const toggleInputs = (number) => {
+  let ids = [
+    "tipo",
+    "adminDonation",
+    "adminDate",
+    "adminContact",
+    "adminPassword",
+    "updateButton",
+  ];
+  let buttonText = document.getElementById(`btnText${number}`);
+
+  let inputs = ids.map((id) => document.getElementById(id + number));
+  inputs.map((input) => {
+    input.disabled = !input.disabled;
+    buttonText.innerText = input.disabled
+      ? "Habilitar edição"
+      : "Desabilitar edição";
+  });
+};
