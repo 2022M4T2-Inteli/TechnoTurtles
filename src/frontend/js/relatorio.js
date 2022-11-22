@@ -127,8 +127,12 @@ const modal = (device) => {
 
         <div class="modal-footer">
         
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-warning mx-auto" onclick="updateDevice(${id});" id="updateButton${id}" data-bs-dismiss="modal" disabled='true'>Atualizar</button>
+          <button type="button" class="btn btn-danger d-flex align-items-center justify-content-between"
+          data-bs-dismiss="modal"
+        onclick="deleteDevice(${id})">
+          Deletar</button>
         </div>
       </div>
     </div>
@@ -181,4 +185,13 @@ const toggleInputs = (number) => {
       ? "Habilitar edição"
       : "Desabilitar edição";
   });
+};
+
+const deleteDevice = (id) => {
+  axios
+    .delete(url + "/device/" + id)
+    .then((res) => {
+      getAdmins();
+    })
+    .catch((e) => console.error(e));
 };
