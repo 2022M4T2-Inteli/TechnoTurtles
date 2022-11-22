@@ -189,9 +189,9 @@ const toggleInputs = (number) => {
 
 const deleteDevice = (id) => {
   axios
-    .delete(url + "/device/" + id)
-    .then((res) => {
-      getAdmins();
+    .delete(url + `/device/${id}`)
+    .then((response) => {
+      getDevices();
     })
     .catch((e) => console.error(e));
 };

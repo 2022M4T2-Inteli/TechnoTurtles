@@ -60,8 +60,8 @@ app.put('/device/:id', function(req, res){
 })
 
 
-app.delete('/device', async function(req, res){
-    let device = await deleteDevice(req.body.id);
+app.delete('/device/:id', async function(req, res){
+    await deleteDevice(req.body.id);
     res.json({
         "statusCode": 200,
         "msg": "Deletado com sucesso"
