@@ -1,7 +1,7 @@
 import { openLogsDb } from "../configDB.js";
 
 //create table
-export async function createTable() {
+export async function createLogTable() {
     openLogsDb().then(db => {
         db.exec('CREATE TABLE IF NOT EXISTS LOGS ( id INTEGER PRIMARY KEY, time INTEGER, date TEXT, localizacao INTEGER, patrimonio INTEGER, endereco TEXT, status TEXT, responsavel TEXT ) ');
     })
