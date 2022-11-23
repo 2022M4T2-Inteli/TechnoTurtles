@@ -1,4 +1,4 @@
-import { openDb } from "../logs.js";
+import { openLogsDb } from "../configDB.js";
 
 //create table
 export async function createTable() {
