@@ -52,6 +52,7 @@ const renderDevices = (list) => {
 
 const modal = (device) => {
   const { id, tipo, patrimonio, localizacao, endereco, status } = device;
+
   return `
   <!-- Modal -->
   <div class="modal fade" id="exampleModal${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -166,7 +167,7 @@ const updateDevice = (id) => {
 };
 
 const deleteDevice = (id) => {
-  if (confirm("Deseja mesmo deletar o dispositivo?")) {
+  if (confirm("Deseja mesmo deletar?")) {
     axios
       .delete(url + `/device/${id}`)
       .then((response) => {
