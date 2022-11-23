@@ -9,6 +9,7 @@ export async function openDb() {
   })
 }
 
+// to open the log database
 export async function openLogsDb() {
   return open({
     filename: './logs.db',
