@@ -1,7 +1,9 @@
 import { openDb } from './configDB.js';
 import { openLogsDb } from ".configDB.js";
+
 import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr } from './Controller/device.js';
 import { createLogTable, insertLog, selectLogs, selectLogsfromAddr } from './Controller/logs.js';
+
 import fetch from "node-fetch";
 
 import express from 'express';
@@ -15,6 +17,7 @@ app.use(router);
 app.use(express.static('../frontend'));
 
 createTable();
+createLogTable();
 
 const PORT = 3000;
 
@@ -34,10 +37,21 @@ app.get('/devices', async function (req, res) {
     res.json(devices);
 })
 
+app.get('/logs', async function (req, res) {
+    let logs = await selectLogs();
+    res.json(logs);
+})
+
 app.get('/device/:id', async function (req, res) {
     let id = req.params.id;
     let device = await selectDevices(id);
     res.json(device);
+})
+
+app.get('/device/:id', async function (req, res) {
+    let id = req.params.id;
+    let log = await selectLogs(id);
+    res.json(log);
 })
 
 app.post('/device', function (req, res) {
@@ -89,6 +103,7 @@ app.get('/test_device', async (req, res) => {
     const obj = JSON.parse(devices);
     for (let i = 0; i <= obj.length; i++) {
         updateStatusfromAddr(obj[i]);
+        // insertLog(obj[i]);
     }
     res.json({
         "statusCode": 200
