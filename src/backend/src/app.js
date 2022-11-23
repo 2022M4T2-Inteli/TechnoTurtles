@@ -34,7 +34,7 @@ app.get('/devices', async function(req, res){
 
 app.get('/device/:id', async function(req, res){
     let id = req.params.id;
-    let device = await selectDevice(id);
+    let device = await selectDevices(id);
     res.json(device);
 })
 
@@ -45,14 +45,14 @@ app.post('/device', function(req, res){
     });
 });
 
-app.put('/device/:id', function(req, res){
+app.put('/device/:id', async function(req, res){
     if(req.body && !req.body.id){
         res.json({
             "statusCode" : "400",
             "msg":"Você precisa informar um id"
         })
     }else{
-        updateDevice(req.body)
+        await updateDevice(req.body)
         res.json({
             "statusCode": 200
         })
@@ -60,12 +60,20 @@ app.put('/device/:id', function(req, res){
 })
 
 
-app.delete('/device/:id', async function(req, res){
-    await deleteDevice(req.body.id);
-    res.json({
-        "statusCode": 200,
-        "msg": "Deletado com sucesso"
-    });
+app.delete('/device/:id', async (req, res)=>{
+    try {
+        await deleteDevice(req.body.id);
+        res.json({
+            "statusCode": 200,
+            "msg": "Deletado com sucesso"
+        });
+    } catch (err) {
+        console.log(err);
+        res.json({
+            "statusCode": 400,
+            "msg": "Erro ao deletar"
+        });
+    }
 })
 
 //-------------------------------------------------------------------------------------
