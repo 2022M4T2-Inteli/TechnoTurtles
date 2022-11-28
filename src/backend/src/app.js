@@ -103,7 +103,7 @@ app.get('/test_device', async (req, res) => {
     const obj = JSON.parse(devices);
     for (let i = 0; i <= obj.length; i++) {
         updateStatusfromAddr(obj[i]);
-        // insertLog(obj[i]);
+        insertLog(obj[i]);
     }
     res.json({
         "statusCode": 200
