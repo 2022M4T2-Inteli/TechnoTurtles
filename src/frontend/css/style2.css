@@ -192,7 +192,7 @@ p.txt2 {
 
 .imgTxt4 {
     display: flex;
-    padding-top: 8vh;
+    padding-top: 2vh;
     justify-content: space-between;
     padding-right: 15%;
 
@@ -695,9 +695,6 @@ div.centerList {
         width: 2vw;
     }
 
-    .imgTxt4 {
-        padding-top: 16vh;
-    }
 
     .dropdown-content {
         border-radius: 10px;
