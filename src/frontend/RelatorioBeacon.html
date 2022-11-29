@@ -87,19 +87,10 @@
     </ul>
   </div>
 
-  <header>
-    <div class="search">
-      <br><br><br>
-      <i class="bi bi-search"></i>
-      <input onkeyup="searchFilter()" class="inputlarge" type="search" placeholder="Search">
-    </div>
-  </header>
-
-
 
   <div class="imgTxt4">
     <div></div>
-    <a href="./loginBeacon.html">
+    <a href="./novo-ativo">
       <button class="buttonLog">Adicionar Ativo</button>
     </a>
     <div class="centerList">
@@ -109,22 +100,11 @@
       <!-- <i class="bi bi-triangle-fill"></i>
     
         <label id="locais_e">Escolha o Ativo: </label> -->
-      <select class="inputlarge">
-        <option selected disabled>Escolha o Ativo</option>
-        <option>Notebooks</option>
-        <option>Ipads</option>
-        <option>Apple pencil</option>
-        <option>Cadeiras</option>
-        <option>Mesas</option>
-      </select>
-
+      <input id="searchInput" type="text" onkeyup="searchFilter();" class="form-control"
+        placeholder="Tipo de dispositivo" aria-label="Tipo de dispositivo" aria-describedby="basic-addon1">
     </div>
 
-
   </div>
-
-
-
 
 
   <div class="m-2 col-12 col-md-11 mx-auto fs-3 d-flex align-items-center justify-content-center">
