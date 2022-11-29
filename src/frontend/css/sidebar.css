@@ -19,7 +19,7 @@
   top: 0;
   height: 100%;
   width: 78px;
-  background: #000000;
+  background: #242121;
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -173,7 +173,7 @@
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  background: #11101D;
+  background: #3F3D3D;
 }
 
 .sidebar li a:hover {
