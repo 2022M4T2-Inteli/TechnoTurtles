@@ -43,7 +43,7 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 |------> <b> Manual </b> </br>
 |--------> | T2_G4_V1_Manual.pdf </br>
 |--------> | T2_G4_V1_Manual.docx </br>
-|------>  | T2_G5_V1_Apresentação.pdf </br>
+|------> | T2_G5_V1_Apresentação.pdf </br>
 
 |--> <b>src</b> </br>
 |----> | <b> frontend </b> </br>
