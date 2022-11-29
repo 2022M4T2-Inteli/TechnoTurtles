@@ -1,6 +1,3 @@
-import { openDb } from './configDB.js';
-import { openLogsDb } from ".configDB.js";
-
 import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr } from './Controller/device.js';
 import { createLogTable, insertLog, selectLogs, selectLogsfromAddr } from './Controller/logs.js';
 
