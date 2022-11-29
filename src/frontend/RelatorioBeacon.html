@@ -104,11 +104,12 @@
       <br>
 
       <div class="ladinho"></div>
-      <!-- <i class="bi bi-triangle-fill"></i>
-    
-        <label id="locais_e">Escolha o Ativo: </label> -->
-      <input id="searchInput" type="text" onkeyup="searchFilter();" class="form-control"
-        placeholder="Tipo de dispositivo" aria-label="Tipo de dispositivo" aria-describedby="basic-addon1">
+      <select id="searchInput" oninput="searchFilter()" class="form-control" placeholder="Tipo de dispositivo">
+        <option value="NOTEBOOK"> Notebooks </option>
+        <option value="TABLET"> Tablets </option>
+        <option value="MOVEL"> Moveis </option>
+      </select>
+
     </div>
 
   </div>
