@@ -11,10 +11,10 @@
 
 #include <ArduinoJson.h>
 
-const char *ssid = "Inteli-COLLEGE";
-const char *password = "QazWsx@123";
+const char *ssid = "Inteli-welcome";
+const char *password = "";
 
-String serverName = "http://10.128.64.136:3000/test_device";
+String serverName = "http://10.128.1.200:3000/test_device";
 String request;
 
 AsyncWebServer localServer(80);

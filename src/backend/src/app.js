@@ -92,7 +92,7 @@ app.delete('/device/:id', async (req, res) => {
 //-------------------------------------------------------------------------------------
 
 app.get('/test_device', async (req, res) => {
-    const devices = await fetch('http://10.128.65.109/list_devices').then(data => {
+    const devices = await fetch('http://10.128.1.188/list_devices').then(data => {
         return data.json();
     });
     /*Tratar os dados aqui*/
