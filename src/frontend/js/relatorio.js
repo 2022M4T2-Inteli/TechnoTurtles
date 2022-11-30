@@ -200,9 +200,11 @@ const toggleInputs = (number) => {
 
 
 function searchFilter() {
-  var input, filter, table, tr, td, i, txtValue;
+  var select, input, filter, table, tr, td, i, txtValue;
 
-  input = document.getElementById("searchInput");
+  select = document.getElementById('searchInput');
+  input = select.options[select.selectedIndex];
+
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
