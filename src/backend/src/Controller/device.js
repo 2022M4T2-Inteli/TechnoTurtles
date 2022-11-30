@@ -30,6 +30,12 @@ export async function updateStatusfromAddr(addr) {
     });
 }
 
+export async function updateStatusfromAddr2(addr) {
+    openDb().then(db => {
+        db.run('UPDATE Devices SET status = "ENCONTRADO", localizacao=2 WHERE endereco = "' + addr + '"');
+    });
+}
+
 //get device by id
 export async function selectDevicefromAddr(addr) {
     return openDb().then(async (db) => {

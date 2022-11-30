@@ -1,4 +1,4 @@
-import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, selectDevicefromAddr } from './Controller/device.js';
+import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, updateStatusfromAddr2, selectDevicefromAddr } from './Controller/device.js';
 import { createLogTable, insertLog, selectLogs, selectLogsfromAddr } from './Controller/logs.js';
 
 import fetch from "node-fetch";
@@ -92,15 +92,35 @@ app.delete('/device/:id', async (req, res) => {
 //-------------------------------------------------------------------------------------
 
 app.get('/test_device', async (req, res) => {
-    const devices = await fetch('http://10.128.65.109/list_devices').then(data => {
+    const devices = await fetch('http://10.128.65.147/list_devices').then(data => {
         return data.json();
     });
     /*Tratar os dados aqui*/
     //res.json(devices);
-    const obj = JSON.parse(devices);
-    for (let i = 0; i <= obj.length; i++) {
-        updateStatusfromAddr(obj[i]);
-        insertLog(obj[i]);
+    // const obj = JSON.parse(devices);
+    // console.log(devices.length);
+    console.log(devices);
+    for (let i = 0; i <= 200; i++) {
+        console.log(devices[`${i}`]);
+        updateStatusfromAddr(devices[`${i}`]);
+        // insertLog(obj[i]);
+    }
+    res.json({
+        "statusCode": 200
+    });
+});
+
+app.get('/test_device2', async (req, res) => {
+    const devices = await fetch('http://172.16.176.79/list_devices').then(data => {
+        return data.json();
+    });
+    /*Tratar os dados aqui*/
+    //res.json(devices);
+    // const obj = JSON.parse(devices);
+    for (let i = 0; i <= 200; i++) {
+        console.log(devices[`${i}`]);
+        updateStatusfromAddr2(devices[`${i}`]);
+        // insertLog(obj[i]);
     }
     res.json({
         "statusCode": 200
