@@ -36,7 +36,9 @@
     scroll-behavior: smooth;
 }
 
-
+table {
+    background-color: white;
+}
 
 .bolinhas {
     border: 0;
@@ -502,6 +504,10 @@ div.centerList {
     justify-content: flex-end;
 }
 
+.centerItem {
+    text-align: center;
+}
+
 .center {
     justify-content: center;
 }
@@ -531,7 +537,6 @@ div.centerList {
 .item {
     margin: 5px;
     padding: 0 10px;
-    background: tomato;
     text-align: center;
     font-size: 1.5em;
 }
@@ -540,7 +545,6 @@ div.centerList {
 .flex {
     flex: 1;
 }
-
 
 @media (min-width: 900px) {
 
@@ -928,7 +932,6 @@ div.centerList {
     align-self: center;
     box-shadow: 0px 0px 5px #ebebeb;
     transition: transform 0.3s ease;
-
 }
 
 .busca {

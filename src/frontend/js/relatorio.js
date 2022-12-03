@@ -208,16 +208,17 @@ function searchFilter() {
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-
-  for (i = 0; i < tr.length; i++) {
-    //search in the first column, if the text is found, search in the second column
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+  if (input != "") {
+    for (i = 0; i < tr.length; i++) {
+      //search in the first column, if the text is found, search in the second column
+      td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
       }
     }
   }
