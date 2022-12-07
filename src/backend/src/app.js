@@ -59,23 +59,30 @@ app.post('/device', function (req, res) {
 });
 
 app.put('/device/:id', async function (req, res) {
-    if (req.body && !req.body.id) {
+    if (req.body && !req.params.id) {
         res.json({
             "statusCode": "400",
             "msg": "Você precisa informar um id"
         })
     } else {
-        await updateDevice(req.body)
+        const device = {
+            //get all properties from req.body and add id property
+            ...req.body,
+            //add id property
+            id: req.params.id
+        }
+        await updateDevice(device)
         res.json({
             "statusCode": 200
         })
     }
+
 })
 
 
-app.delete('/device/:id', async (req, res) => {
+app.delete('/delete_device/:id', async (req, res) => {
     try {
-        await deleteDevice(req.body.id);
+        await deleteDevice(req.params.id);
         res.json({
             "statusCode": 200,
             "msg": "Deletado com sucesso"

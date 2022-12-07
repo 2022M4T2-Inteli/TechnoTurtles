@@ -130,7 +130,7 @@ const modal = (device) => {
         
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-warning mx-auto" onclick="updateDevice(${id});" id="updateButton${id}" data-bs-dismiss="modal" disabled='true'>Atualizar</button>
-          <button type="button" class="btn btn-danger d-flex align-items-center justify-content-between" data-bs-dismiss="modal" onclick="deleteDevice(${id})"> Deletar</button>
+          <button type="button" class="btn btn-danger d-flex align-items-center justify-content-between" data-bs-dismiss="modal" onclick="deleteDevice(${id})" id="deleteButton${id}"> Deletar</button>
         </div>
       </div>
     </div>
@@ -151,8 +151,7 @@ const updateDevice = (id) => {
       patrimonio: patrimonio.value,
       endereco: endereco.value,
       status: status.value,
-      localizacao: localizacao.value,
-      id: id,
+      localizacao: localizacao.value
     };
 
     axios
@@ -169,7 +168,7 @@ const updateDevice = (id) => {
 const deleteDevice = (id) => {
   if (confirm("Deseja mesmo deletar?")) {
     axios
-      .delete(url + `/device/${id}`)
+      .delete(url + `/delete_device/${id}`)
       .then((response) => {
         getDevices();
       })
