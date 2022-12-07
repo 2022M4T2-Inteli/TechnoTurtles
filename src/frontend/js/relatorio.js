@@ -246,3 +246,13 @@ function searchFilter() {
     }
   }
 }
+
+function download() {
+  // principal função dessa função é de baixar o relatório em csv ou excel, mas coloquei aqui pra chamar o modal
+
+  Swal.fire(
+    'Relatório',
+    'Fazendo download do relatório...',
+    'info'
+  )
+}
