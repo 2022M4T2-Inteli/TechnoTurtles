@@ -15,16 +15,24 @@ const insertDevice = () => {
         endereco: endereco.value,
         status: status.value
     }
-    try{
+    try {
         axios
             .post(`${url}/device`, device)
             .then((res) => {
-                alert("Dispositivo cadastrado com sucesso");
+                sweetAlert();
             })
             .catch((err) => console.error(err));
-    }catch(err){
+    } catch (err) {
         console.error(err);
         alert("Preencha todos os campos");
 
     }
+}
+
+function sweetAlert() {
+    Swal.fire(
+        'Enviado!',
+        'Ativo cadastrado!',
+        'success'
+    )
 }
