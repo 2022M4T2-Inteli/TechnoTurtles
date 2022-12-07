@@ -5,19 +5,23 @@ import { createLogTable, insertLog, selectLogs, selectLogsfromAddr } from './Con
 
 import fetch from "node-fetch";
 
+//importa o express
 import express from 'express';
 const app = express();
 app.use(express.json());
 
+//router que carrega os arquivos html
 import { router } from './routes.js';
 app.use(router);
 
 //LOADS CSS AND JS FILES (DON'T FORGET)
 app.use(express.static('../frontend'));
 
+//cria tabelas de aparelhos e logs
 createTable();
 createLogTable();
 
+//porta
 const PORT = 3000;
 
 //Olá mundo :)
@@ -67,6 +71,7 @@ app.post('/device', function (req, res) {
     });
 });
 
+//muda uma informação de um aparelho
 app.put('/device/:id', async function (req, res) {
     if (req.body && !req.params.id) {
         res.json({
@@ -88,7 +93,7 @@ app.put('/device/:id', async function (req, res) {
 
 })
 
-
+//deleta um aparelho da base de dados
 app.delete('/delete_device/:id', async (req, res) => {
     try {
                 //deleta o que tiver o parametro(PARAMS) id informado
@@ -106,7 +111,7 @@ app.delete('/delete_device/:id', async (req, res) => {
     }
 })
 
-//-------------------------------------------------------------------------------------
+//Seção de recebimento de dados do ESP32--------------------------------------------------------------
 
 // preciso fazer uma contagem de quantos dispositivos estão em cada sala, por isso 
 // talvez na função aqui embaixo precisaremos contabilizar essa função
@@ -154,8 +159,9 @@ app.post('/test_device', function (req, res) {
     res.send('ok');
 });
 
-//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
 
+//quando iniciado o servidor, ele vai rodar na porta 3000
 app.listen(PORT, function () {
     console.log('http://localhost:' + PORT);
 });
