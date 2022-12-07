@@ -72,8 +72,15 @@
       </li>
     </ul>
   </div>
-  <br><br><br>
+  <br>
   <h2 class="ttl1" style="text-align: center">Acesso aos relatórios</h2>
+  <div class="row container center">
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input onkeyup="searchFilter()" id="exploreInput" class="inputlarge" type="search" placeholder="Search">
+    </div>
+  </div>
+  <br><br>
   <div class="container space-between">
     <div></div>
     <div class="item">
@@ -83,7 +90,7 @@
     <div class="item">
       <label class="txt1">Selecione o tipo de dispositivo: </label>
       <br>
-      <select id="searchInput" oninput="searchFilter()" class="form- inputlarge" placeholder="Tipo de dispositivo">
+      <select id="searchInput" oninput="typeFilter()" class="form- inputlarge" placeholder="Tipo de dispositivo">
         <option value="" selected> Todos </option>
         <option value="NOTEBOOK"> Notebooks </option>
         <option value="TABLET"> Tablets </option>

@@ -199,7 +199,7 @@ const toggleInputs = (number) => {
 };
 
 
-function searchFilter() {
+function typeFilter() {
   var select, input, filter, table, tr, td, i, txtValue;
 
   select = document.getElementById('searchInput');
@@ -212,6 +212,29 @@ function searchFilter() {
     for (i = 0; i < tr.length; i++) {
       //search in the first column, if the text is found, search in the second column
       td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+}
+
+function searchFilter() {
+  var input, filter, table, tr, td, i, txtValue;
+
+  input = document.getElementById('exploreInput');
+
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  if (input != "") {
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[2];
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
