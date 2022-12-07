@@ -1,3 +1,5 @@
+// import {conatagem} from "../../backend/src/app.js";
+
 const resX = 800;
 const resY = 400;
 

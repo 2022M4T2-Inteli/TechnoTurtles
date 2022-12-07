@@ -98,6 +98,10 @@ app.delete('/delete_device/:id', async (req, res) => {
 
 //-------------------------------------------------------------------------------------
 
+// preciso fazer uma contagem de quantos dispositivos estão em cada sala, por isso 
+// talvez na função aqui embaixo precisaremos contabilizar essa função
+// mas essas coisas dependem 
+
 app.get('/test_device', async (req, res) => {
     const devices = await fetch('http://10.128.65.147/list_devices').then(data => {
         return data.json();

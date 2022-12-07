@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Ativos</title>
+  <link rel="icon" href="./images/logo.png">
+  <!-- Metas  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================== Scripts ==============================  -->
+  <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <!-- Personal Scripts    -->
+  <script src="./js/info.js"></script>
+
+
+  <!-- ============================ Stylesheets ============================  -->
+  <!-- bootstrap styles  -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <!-- Personal styles -->
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+
+</head>
+
+<body class="bolinhas">
+  <!-- another scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- sidebar code  -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name">Beacon Tracker</div>
+      <i class="bi bi-list" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="/relatorio">
+          <i class="bi bi-folder"></i>
+          <span class="links_name">Relatórios</span>
+        </a>
+        <span class="tooltip">Relatórios</span>
+      </li>
+      <li>
+        <a href="/mapa">
+          <i class="bi bi-map"></i>
+          <span class="links_name">Mapa</span>
+        </a>
+        <span class="tooltip">Mapa</span>
+      </li>
+      <li>
+        <a href="/novo-ativo">
+          <i class="bi bi-folder-plus"></i>
+          <span class="links_name">Adicionar ativo</span>
+        </a>
+        <span class="tooltip">Adicionar ativo</span>
+      </li>
+      <li>
+        <a href="./info.html">
+          <i class="bi bi-box-arrow-in-down"></i>
+          <span class="links_name">Instruções</span>
+        </a>
+        <span class="tooltip">Instruções</span>
+      </li>
+      <li>
+        <a href="./loginBeacon.html">
+          <i class="bi bi-box-arrow-left"></i>
+          <span class="links_name">Sair</span>
+        </a>
+        <span class="tooltip">Sair</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- buttons  -->
+  <div class="RLpadding10">
+    <br class="sm-screen"><br class="sm-screen">
+    <h2 class="ttl1">Bem vindo(a) ao Beacon Tracker</h2>
+    <br><br>
+
+    <a href="\test_device">
+      <button class="marg" onclick="sweetAlert()">
+        <i class="fa-solid fa-tower-broadcast icon3 btnIcon"></i>
+        <p class="txt2">Iniciar buscas de dispositivos</p>
+      </button>
+    </a>
+    <br><br><br>
+    <a href="https://docs.google.com/document/d/1BsUdmBK2e1hCnsma24j-7Kj_95mKVXSgOtufr891dd4/edit?usp=sharing"
+      target="_blank">
+      <button class="marg">
+        <i class="fa-solid fa-download icon3 btnIcon"></i>
+        <p class="txt2">Ver manual de instruções</p>
+      </button>
+    </a>
+
+
+
+  </div>
+
+  <script src="./js/sidebar.js"></script>
+</body>
+
+</html>
