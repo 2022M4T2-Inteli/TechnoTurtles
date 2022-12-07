@@ -331,6 +331,10 @@ div.card2:hover {
     padding-left: 10%;
 }
 
+.swal2-html-container {
+    color: white;
+}
+
 button.marg {
     background-color: #fff;
     border: 0;

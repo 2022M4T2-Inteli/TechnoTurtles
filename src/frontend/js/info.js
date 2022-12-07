@@ -1,6 +1,6 @@
 
 
-function seetAlert() {
+function sweetAlert() {
     let timerInterval
     Swal.fire({
         title: 'Encontrando dispositivos!',

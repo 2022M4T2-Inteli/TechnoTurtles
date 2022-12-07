@@ -32,7 +32,7 @@ const insertDevice = () => {
 function sweetAlert() {
     Swal.fire(
         'Enviado!',
-        'Ativo cadastrado!',
+        'Ativo cadastrado!', 
         'success'
     )
 }
