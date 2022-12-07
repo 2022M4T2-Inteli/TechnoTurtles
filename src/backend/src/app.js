@@ -1,3 +1,5 @@
+// Descrição: Arquivo responsável por executar a aplicação (Back End)
+//importa as funções de outros arquivos
 import { createTable, insertDevice, updateDevice, selectDevices, deleteDevice, updateDeviceFromJson, updateStatusfromAddr, updateStatusfromAddr2, selectDevicefromAddr } from './Controller/device.js';
 import { createLogTable, insertLog, selectLogs, selectLogsfromAddr } from './Controller/logs.js';
 
@@ -18,10 +20,12 @@ createLogTable();
 
 const PORT = 3000;
 
+//Olá mundo :)
 app.get('/', function (req, res) {
     res.send('Hello World');
 })
 
+//teste
 app.get('/test', function (req, res) {
     res.json({
         "statusCode": 200,
@@ -29,28 +33,33 @@ app.get('/test', function (req, res) {
     });
 })
 
+//recebe todos os aparelhos
 app.get('/devices', async function (req, res) {
     let devices = await selectDevices();
     res.json(devices);
 })
 
+//recebe todos os logs
 app.get('/logs', async function (req, res) {
     let logs = await selectLogs();
     res.json(logs);
 })
 
+//informação de um aparelho
 app.get('/device/:id', async function (req, res) {
     let id = req.params.id;
     let device = await selectDevices(id);
     res.json(device);
 })
 
+//recebe a informação de um aparelho no log
 app.get('/device/:id', async function (req, res) {
     let id = req.params.id;
     let log = await selectLogs(id);
     res.json(log);
 })
 
+//insere um aparelho na base de dados
 app.post('/device', function (req, res) {
     insertDevice(req.body);
     res.json({
@@ -82,6 +91,7 @@ app.put('/device/:id', async function (req, res) {
 
 app.delete('/delete_device/:id', async (req, res) => {
     try {
+                //deleta o que tiver o parametro(PARAMS) id informado
         await deleteDevice(req.params.id);
         res.json({
             "statusCode": 200,
