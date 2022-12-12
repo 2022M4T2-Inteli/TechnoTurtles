@@ -1,77 +1,57 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
-# Prototipação de solução IoT (Crush)
+## Prototipação de solução IoT - Grupo 4: TechnoTurtles
 
-## TechnoTurtles (Grupo 4)
- 
-## Integrantes: 
-<br/>
-- <a href="https://www.linkedin.com/in/emanuele-morais/">Emanuele Lacerda Morais Martins</a><br/>
-- <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Enzo Siqueira Kikuchi</a><br/>
-- <a href="https://www.linkedin.com/in/gabriel-nascimento-b80933217/">Gabriel Metello Nascimento</a><br/> 
-- <a href="https://www.linkedin.com/in/gabriela-de-morais-da-silva-467b29238/">Gabriela de Morais da Silva</a> <br/>
-- <a href="https://www.linkedin.com/in/lucas-henrique-sales-de-souza/">Lucas Henrique Sales de Souza</a><br/>
-- <a href="https://www.linkedin.com/in/">Pedro Henrique Sant'Anna Oliveira</a><br/> 
+### [Trailer]()
 
-## 📝 Descrição
+<img src="https://user-images.githubusercontent.com/99221221/207127449-d1a57950-26ce-493a-9247-fe4923fd4164.png" alt="app-screens-mockup"/>
+
+## 📝 Descrição da solução
 
 O objetivo geral da solução proposta neste documento é uma solução em IoT (do inglês, “Internet of things“ e em portugues "Internet das coisas”) para a localização e rastreamento dos aparelhos eletrônicos que são patrimônio da escola. O resultado da implementação dessa solução será positiva pois reduzirá custos de operação, aumentará  a segurança dos aparelhos em questão e o controle deles, sabendo onde eles estão localizados.
+
+### Objetivo Geral
+Permitir melhor controle dos ativos e identificar sua localização no perímetro escolar.
+  
+### Objetivos Específicos 
+Os objetivos específicos são:
+- Permitir melhor controle dos ativos (Notebooks, ipads, tablets, etc); 
+- Web App com interface visual para realizar buscas dos itens perdidos
+- Sistema de busca de equipamentos eletrônicos através da tecnologia bluetooth 
+- Gerar relatórios ao cliente, facilitando etapas de busca e inventário
+- Gerar a informação de quando dispositivos não são encontrados no perimetro escolar
+
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos presentes na raiz do projeto, definem-se:
 
-| <b>readme.md</b>
-
-| <b>imagens</b>
-
-|--> <b>documentos</b> </br>
-|----> <b> Sprint 1</b> </br>
-|------> <b> IoTDoc </b> </br>
-|--------> | T2_G4_V1_IoT_Document.pdf </br>
-|--------> | T2_G4_V1_IoT_Document.docx </br>
-|------>  | T2_G5_V1_Apresentação.pdf </br>
-|----> <b> Sprint 2</b> </br>
-|------> <b> IoTDoc </b> </br>
-|--------> | T2_G4_V2_IoT_Document.pdf </br>
-|--------> | T2_G4_V2_IoT_Document.docx </br>
-|------>  | T2_G5_V2_Apresentação.pdf </br>
-|----> <b> Sprint 3</b> </br>
-|------> <b> IoTDoc </b> </br>
-|--------> | T2_G4_V3_IoT_Document.pdf </br>
-|--------> | T2_G4_V3_IoT_Document.docx </br>
-|------> <b> Manual </b> </br>
-|--------> | T2_G4_V1_Manual.pdf </br>
-|--------> | T2_G4_V1_Manual.docx </br>
-|------> | T2_G5_V3_Apresentação.pdf </br>
-|----> <b> Sprint 4</b> </br>
-|------> <b> IoTDoc </b> </br>
-|--------> | T2_G4_V4_IoT_Document.pdf </br>
-|--------> | T2_G4_V4_IoT_Document.docx </br>
-|------> <b> Manual </b> </br>
-|--------> | T2_G4_V2_Manual.pdf </br>
-|--------> | T2_G4_V2_Manual.docx </br>
-|------> | T2_G5_V4_Apresentação.pdf </br>
-
-|--> <b>src</b> </br>
-|----> | <b> frontend </b> </br>
-|----> | <b> backend </b> </br>
-|----> | <b> hardware </b> </br>
+```
+├── Documentação
+├── src
+│    ├── backend
+│    ├── frontend
+│    ├── hardware
+├── .gitgnore
+├── README.md
+```
 
 Dentre os arquivos presentes na raiz do projeto, definem-se:
 <ul>
-    <li> <b>readme.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora). </li>
-    <li> <b>documentos</b>: aqui estarão todos os documentos do projeto, como as apresentações, o IoT Document e o Manual de Instruções. Eles estão separados por pastas relativas às sprints. </li>
-    <li> <b>src</b>: nesta pasta encontra-se todo o código fonte do sistema (existem três subpastas, sendo elas <b>backend</b> , <b>frontend</b> e <b>hardware</b> que contêm, respectivamente, código do servidor, código da página web e código utilizado para configurar o ESP32).
-    <li> <b>imagens</b>: imagens relacionadas ao projeto como um todo (por exemplo imagens do sistema, do grupo, logotipos e afins).
+    <li> <b>README.md</b>: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora). </li>
+    <li> <b>Documentos</b>: Aqui estarão todos os documentos do projeto, como as apresentações, o IoT Document e o Manual de Instruções. Eles estão separados por pastas relativas às sprints. </li>
+    <li> <b>src</b>: Nesta pasta encontra-se todo o código fonte do sistema (existem três subpastas, sendo elas <b>backend</b> , <b>frontend</b> e <b>hardware</b> que contêm, respectivamente, código do servidor, código da página web e código utilizado para configurar o ESP32).
+    <li> <b>.gitgnore</b>: Arquivo que diz ao GitHub o que deve ser ignorado ao realizar um comit.
 </ul>
 
 ## 💻 Configuração para desenvolvimento
 
+É possível ter acesso as configurações ideias do sistema no manual de instruções que se contra em `2022M4T2-Inteli/Projeto4/Documentação`. Para acessar essa pasta clique [aqui](https://github.com/2022M4T2-Inteli/Projeto4/tree/main/Documenta%C3%A7%C3%A3o)
+
 ## 🗃 Histórico de lançamentos
 
 * 1.0.0 - 21/10/2022
-    * Entrega da Sprint 1 (Documentação e prottipações)
+    * Entrega da Sprint 1 (Documentação e prototipações)
 * 1.1.0 - 27/10/2022
     * Criação da estrutura das pastas
 * 1.2.0 - 28/10/2022
@@ -88,23 +68,52 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
    * Estrutura das pastas, readme e atualização IoTDoc V3 (entrega da sprint 3)
 * 2.5.0 - 04/12/2022
    * Entrega da Sprint 4
+## Integrantes: 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/emanuele-morais/">
+        <img src="https://avatars.githubusercontent.com/u/99221221?v=4" width="100px;" alt="Emanuele Morais profile image"/><br>
+        <sub>
+          <b>Emanuele Lacerda Morais Martins</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">
+        <img src="https://avatars.githubusercontent.com/u/47116353?v=4" width="100px;" alt="Filipi Enzo profile image"/><br>
+        <sub>
+          <b>Filipi Enzo Siqueira Kikuchi</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/gabriel-nascimento-b80933217/">
+        <img src="https://avatars.githubusercontent.com/u/99196159?v=4" width="100px;" alt="Gabriel Metello profile image"/><br>
+        <sub>
+          <b>Gabriel Metello Nascimento</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/gabriela-de-morais-da-silva-467b29238/">
+        <img src="https://avatars.githubusercontent.com/u/99213088?v=4" width="100px;" alt="Gabriela Silva profile image"/><br>
+        <sub>
+          <b>Gabriela de Morais da Silva</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/lucas-henrique-sales-de-souza/">
+        <img src="https://avatars.githubusercontent.com/u/99260684?v=4" width="100px;" alt="Lucas Henrique profile image"/><br>
+        <sub>
+          <b>Lucas Henrique Sales de Souza</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table> 
 
 ## 📋 Licença/License
-Dispositivo IoT de localização de ativos by Inteli, <a href="https://www.linkedin.com/in/emanuele-morais/">Emanuele Lacerda Morais Martins</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Enzo Siqueira Kikuchi</a>, <a href="https://www.linkedin.com/in/gabriel-nascimento-b80933217/">Gabriel Metello Nascimento</a>, <a href="https://www.linkedin.com/in/gabriela-de-morais-da-silva-467b29238/">Gabriela de Morais da Silva</a>, <a href="https://www.linkedin.com/in/lucas-henrique-sales-de-souza/">Lucas Henrique Sales de Souza</a> e <a href="https://www.linkedin.com/in/">Pedro Henrique Sant'Anna Oliveira</a> is licensed under Attribution 4.0 International.
+Dispositivo IoT de localização de ativos by Inteli, <a href="https://www.linkedin.com/in/emanuele-morais/">Emanuele Lacerda Morais Martins</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Enzo Siqueira Kikuchi</a>, <a href="https://www.linkedin.com/in/gabriel-nascimento-b80933217/">Gabriel Metello Nascimento</a>, <a href="https://www.linkedin.com/in/gabriela-de-morais-da-silva-467b29238/">Gabriela de Morais da Silva</a> e <a href="https://www.linkedin.com/in/lucas-henrique-sales-de-souza/">Lucas Henrique Sales de Souza</a> 
 
-## 🎓 Referências
-
-Aqui estão as referências usadas no projeto:
-<ul>
-    <li> INTERNATIONAL BACCALAUREATE ORGANIZATION. About the IB. Disponível em: https://www.ibo.org/about-the-ib/. Acesso em: 14/10/2022.</li>
-
-    <li> BEACON SCHOOL. Bem-vindos à Beacon. Disponível em: https://www.beaconschool.com. br/quem-somos/bem-vindos-a-beacon/. Acesso em: 14/10/2022. </li>
-
-    <li> ORGANIZAÇÃO DE ESCOLAS BILÍNGUES. Escolas Associadas. Disponível em: https://www.oebi.com.br/. Acesso em: 17/10/2022. </li>
-
-    <li> JORNAL ESTADO DE MINAS. A evolução da educação bilíngue pós-pandemia. 08/09/2022. Disponível em: https://www.em.com.br/app/noticia/opiniao/2022/09/08/ interna_opiniao,1392010/a-evolucao-da-educacao-bilingue-pos-pandemia.shtml. Acesso em: 17/10/2022. </li>
-
-    <li> AWS. Computação em nuvem com a AWS. Disponível em: https://aws.amazon.com/pt/ what-is-aws/?nc2=h_ql_le_int. Acesso em: 09/11/2022. SANTOS, R. Getting Started with ESP-NOW (ESP32 with Arduino IDE). Disponível em: https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/. Acesso em: 10/11/2022. </li>
-
-    <li> UPESY. Create a WiFi access point with an ESP32. Disponível em: https://www.upesy. com/blogs/tutorials/how-create-a-wifi-acces-point-with-esp32. Acesso em: 10/11/2022. </li>
-</ul>
