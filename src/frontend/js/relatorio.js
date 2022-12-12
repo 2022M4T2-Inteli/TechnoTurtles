@@ -59,7 +59,7 @@ const modal = (device) => {
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Dispositivo ${patrimonio}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -130,7 +130,7 @@ const modal = (device) => {
         
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-warning mx-auto" onclick="updateDevice(${id});" id="updateButton${id}" data-bs-dismiss="modal" disabled='true'>Atualizar</button>
-          <button type="button" class="btn btn-danger d-flex align-items-center justify-content-between" data-bs-dismiss="modal" onclick="deleteDevice(${id})"> Deletar</button>
+          <button type="button" class="btn btn-danger d-flex align-items-center justify-content-between" data-bs-dismiss="modal" onclick="deleteDevice(${id})" id="deleteButton${id}"> Deletar</button>
         </div>
       </div>
     </div>
@@ -151,8 +151,7 @@ const updateDevice = (id) => {
       patrimonio: patrimonio.value,
       endereco: endereco.value,
       status: status.value,
-      localizacao: localizacao.value,
-      id: id,
+      localizacao: localizacao.value
     };
 
     axios
@@ -169,7 +168,7 @@ const updateDevice = (id) => {
 const deleteDevice = (id) => {
   if (confirm("Deseja mesmo deletar?")) {
     axios
-      .delete(url + `/device/${id}`)
+      .delete(url + `/delete_device/${id}`)
       .then((response) => {
         getDevices();
       })
@@ -199,7 +198,7 @@ const toggleInputs = (number) => {
 };
 
 
-function searchFilter() {
+function typeFilter() {
   var select, input, filter, table, tr, td, i, txtValue;
 
   select = document.getElementById('searchInput');
@@ -208,17 +207,51 @@ function searchFilter() {
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-
-  for (i = 0; i < tr.length; i++) {
-    //search in the first column, if the text is found, search in the second column
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+  if (input != "") {
+    for (i = 0; i < tr.length; i++) {
+      //search in the first column, if the text is found, search in the second column
+      td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
       }
     }
   }
+}
+
+function searchFilter() {
+  var input, filter, table, tr, td, i, txtValue;
+
+  input = document.getElementById('exploreInput');
+
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  if (input != "") {
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[2];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+}
+
+function download() {
+  // principal função dessa função é de baixar o relatório em csv ou excel, mas coloquei aqui pra chamar o modal
+
+  Swal.fire(
+    'Relatório',
+    'Fazendo download do relatório...',
+    'info'
+  )
 }

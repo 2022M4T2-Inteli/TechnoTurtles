@@ -2,53 +2,33 @@
 <html lang="pt-br">
 
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <title>Relatórios</title>
+  <!-- ============================== Meta Tags ==============================  -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatórios</title>
 
-
+  <!-- ============================== Stylesheets ==============================  -->
+  <!-- bootstrap styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <!-- personal styles -->
   <link rel="stylesheet" href="./css/sidebar.css">
   <link rel="stylesheet" href="./css/style2.css">
 
+  <!-- ============================== Scripts ==============================  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
 </head>
-<header>
-  <style>
-    table {
-      font-family: sans-serif;
-      width: 100%;
-    }
 
-    td,
-    th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 10px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-
-    .tabelaFreNu {
-      width: 50px;
-    }
-
-    .tabelaPeq {
-      width: 50px;
-    }
-  </style>
-</header>
-
-<body>
+<body class="bolinhas">
   <!-- sidebar code  -->
   <div class="sidebar">
     <div class="logo-details">
@@ -78,7 +58,7 @@
         <span class="tooltip">Adicionar ativo</span>
       </li>
       <li>
-        <a href="./ativos.html">
+        <a href="./info.html">
           <i class="bi bi-box-arrow-in-down"></i>
           <span class="links_name">Instruções</span>
         </a>
@@ -93,24 +73,32 @@
       </li>
     </ul>
   </div>
-  <br><br><br>
-  <h2 class="ttl1" align="center">Acesse aos relatórios</h2>
-  <div class="imgTxt4">
+  <br>
+  <h2 class="ttl1" style="text-align: center">Acesso aos relatórios</h2>
+  <div class="row container center">
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input onkeyup="searchFilter()" id="exploreInput" class="inputlarge" type="search" placeholder="Search">
+    </div>
+  </div>
+  <br><br>
+  <div class="container space-between">
     <div></div>
-    
-    <div class="centerList">
+    <div class="item">
       <br>
-
-      <div class="ladinho"></div>
+      <button class="buttonLog" onclick="download()">Baixar relatório</button>
+    </div>
+    <div class="item">
       <label class="txt1">Selecione o tipo de dispositivo: </label>
-      <select id="searchInput" oninput="searchFilter()" class="form- inputlarge" placeholder="Tipo de dispositivo">
+      <br>
+      <select id="searchInput" oninput="typeFilter()" class="form- inputlarge" placeholder="Tipo de dispositivo">
+        <option value="" selected> Todos </option>
         <option value="NOTEBOOK"> Notebooks </option>
         <option value="TABLET"> Tablets </option>
         <option value="MOVEL"> Moveis </option>
       </select>
-
     </div>
-
+    <div></div>
   </div>
 
 
@@ -133,9 +121,10 @@
     </table>
   </div>
   <br>
-  <center>
-    <button class="buttonLog">Baixar relatório</button>
-  </center>
+  <div style="text-align:center">
+  </div>
+
+  <!-- Scripts Importantes -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
