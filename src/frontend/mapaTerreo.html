@@ -78,7 +78,7 @@
 
   <!-- ============= Header code =============  -->
   <header>
-    <!-- search div  -->
+    <!-- pesquisa por numero de patrimônio  -->
     <div class="row">
       <div class="search">
         <br><br><br>
@@ -86,27 +86,28 @@
         <input onkeyup="searchFilter()" class="inputlarge" type="search" placeholder="Search">
       </div>
     </div>
+
     <br><br><br>
-    <!-- other functions row  -->
-    <div class="boxRow justSpcEvly">
-    </div>
+
+    <div class="boxRow justSpcEvly"></div>
 
     <section class="container space-between">
       <div class="centerList">
 
       </div>
+
       <div class="imgTxt1">
         <select class="inputlarge">
           <option selected disabled>Escolha o ativo</option>
           <option>Notebooks</option>
-          <option>Ipads</option>
-          <option>Apple pencil</option>
-          <option>Cadeiras</option>
-          <option>Mesas</option>
+          <option>Tablets</option>
         </select>
+
         <div class="padding"></div>
 
         <div> </div>
+
+        <!-- botões para mudar de andar -->
         <div class="centerList">
           <button onclick="changeFloor(0)" class="map 0">Terreo</button>
         </div>
@@ -116,19 +117,15 @@
         <div class="centerList">
           <button onclick="changeFloor(2)" class="map 2">Andar 2</button>
         </div>
+
         <div> </div>
       </div>
-      <!-- <div class="centerList">
-        <button class="buttonLog">Relatórios</button>
-      </div> -->
+
       <div> </div>
     </section>
 
-
     </div>
   </header>
-
-
 
   <!-- ========== Vector map container ========== -->
   <div class="container center">
@@ -138,7 +135,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="./js/sidebar.js"></script>
 </body>
