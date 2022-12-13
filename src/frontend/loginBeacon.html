@@ -20,6 +20,7 @@
 
 
     <!-- ============================== Scripts ==============================  -->
+    <script src='./js/login.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,42 +56,18 @@
             <h2 class="ttl1">Beacon Tracker</h2>
             <input type="text" placeholder="Nome de usuário" id='userLogin' />
             <input type="password" placeholder="Senha" id='senhaLogin' />
-            <a href="/informacoes">
-                <button onclick="Login.Login()" class="buttonLog">Entrar</button>
-            </a>
+            <button onclick="auth()" class="buttonLog">Entrar</button>
+            
 
         </div>
         <div class="teste"></div>
 
-        <!-- <img class="imglogin" src="./imagens/garotinhe.png" /> -->
-
 
     </div>
 
-    <!-- <script>
-        function auth() {
-            var user = document.getElementById('userLogin').value;
-            var senha = document.getElementById('senhaLogin').value;
+    <script>
+        
+    </script>
 
-            console.log(user)
-            console.log(senha)
-
-            $.ajax({
-                type: "POST",
-                url: 'localhost:1234/login',
-                data: {
-                    user: user,
-                    senha: senha
-                },
-                success: function (resul) {
-                    console.log(resul)
-                },
-                fail: function (err) {
-                    console.log(err)
-                }
-            });
-        }
-    </script> -->
-
-    <script src='./script.js'></script>
+    <script src='./js/login.js'></script>
 </body>
