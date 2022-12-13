@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 
-// File that contains routes used to load HTML files
+//arquivo de rotas que carrega os arquivos html
 const app = express();
 
 export const router = express.Router();

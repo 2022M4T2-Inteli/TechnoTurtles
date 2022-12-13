@@ -1,7 +1,7 @@
 import sqlite3 from 'sqlite3'
 import { open } from 'sqlite'
 
-// you would have to import / invoke this in another file
+//abre a conexão com o banco de dados
 export async function openDb() {
   return open({
     filename: './database.db',
@@ -9,7 +9,7 @@ export async function openDb() {
   })
 }
 
-// to open the log database
+//abre a conexão com o banco de dados de logs
 export async function openLogsDb() {
   return open({
     filename: './logs.db',
