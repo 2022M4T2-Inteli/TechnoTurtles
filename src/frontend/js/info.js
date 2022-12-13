@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.getElementById("search").addEventListener("click", async() => {
     await axios
     .get(`http://localhost:3000/test_device`)
@@ -9,9 +8,6 @@ document.getElementById("search").addEventListener("click", async() => {
 
 });
 
-=======
-// modal com o tempo
->>>>>>> 9328655f7a2e465ad5f349c34b62395d46408b96
 function sweetAlert() {
     let timerInterval
     Swal.fire({
