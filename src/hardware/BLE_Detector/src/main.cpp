@@ -21,6 +21,10 @@
  * gera um JSON e retorna os endereços encontrados para um servidor.
  */
 
+
+//OBS: ESSE ARQUIVO EXISTE PARA SER USADO NO VISUAL STUDIO CODE COM A EXTENSÃO PIO-IDE
+
+
 // Inclusão das bibliotecas utilizadas no projeto
 // Caso alguma dessas não esteja instalada, consulte
 // o manual de instruções.
