@@ -3,31 +3,29 @@
 
 <head>
   <title>Relatórios</title>
-  <!-- Metas -->
+  <!-- ============================== Meta Tags ==============================  -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ============================ Stylesheets ============================  -->
-  <!-- bootstrap scripts -->
+  <!-- ============================== Stylesheets ==============================  -->
+  <!-- bootstrap styles -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
-
-  <!-- Personal styles  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <!-- personal styles -->
   <link rel="stylesheet" href="./css/sidebar.css">
   <link rel="stylesheet" href="./css/style2.css">
 
-
   <!-- ============================== Scripts ==============================  -->
-  <!-- bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
 </head>
 
 <body class="bolinhas">
@@ -39,7 +37,7 @@
     </div>
     <ul class="nav-list">
       <li>
-        <a href="./info.html">
+        <a href="/informacoes">
           <i class="bi bi-box-arrow-in-down"></i>
           <span class="links_name">Instruções</span>
         </a>
@@ -67,7 +65,7 @@
         <span class="tooltip">Adicionar ativo</span>
       </li>
       <li>
-        <a href="./loginBeacon.html">
+        <a href="/">
           <i class="bi bi-box-arrow-left"></i>
           <span class="links_name">Sair</span>
         </a>
@@ -75,66 +73,65 @@
       </li>
     </ul>
   </div>
-
-  <header>
-
-  </header>
-  <div>
-    <h2 class="centerItem" class=ttl1>Adicione novos ativos!</h2>
-  </div>
-
-  <div class="centerItem">
-    <div class="centerList">
-      <div class="RLpadding10">
-        <div class="">
-          <label>Patrimônio </label>
-          <input class="inputlarge" type="text" id="patrimonio">
-        </div>
-        <br>
-        <div class="">
-          <label>Endereço MAC </label>
-          <input class="inputlarge" type="text" id="endereco">
-        </div>
-        <br>
-        <div class="">
-          <label id="status">Status</label>
-          <select class="inputlarge" id="status">
-            <option selected disabled>Selecione</option>
-            <option>ATIVO</option>
-            <option>INATIVO</option>
-          </select>
-        </div>
-        <br>
-        <div class="">
-          <label id="status">Tipo de ativo</label>
-          <select class="inputlarge" id="tipo">
-            <option selected disabled>Selecione</option>
-            <option>NOTEBOOK</option>
-            <option>TABLET</option>
-            <option>MOVEL</option>
-          </select>
-        </div>
-        <br>
-      </div>
+  <br>
+  <h2 class="ttl1" style="text-align: center">Acesso aos relatórios</h2>
+  <div class="row container center">
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input onkeyup="searchFilter()" id="exploreInput" class="inputlarge" type="search" placeholder="Search">
     </div>
+  </div>
+  <br><br>
+  <div class="container space-between">
+    <div></div>
+    <div class="item">
+      <br>
+      <button class="buttonLog" onclick="download()">Baixar relatório</button>
+    </div>
+    <div class="item">
+      <label class="txt1">Selecione o tipo de dispositivo: </label>
+      <br>
+      <select id="searchInput" oninput="typeFilter()" class="form- inputlarge" placeholder="Tipo de dispositivo">
+        <option value="" selected> Todos </option>
+        <option value="NOTEBOOK"> Notebooks </option>
+        <option value="TABLET"> Tablets </option>
+        <option value="MOVEL"> Moveis </option>
+      </select>
+    </div>
+    <div></div>
+  </div>
 
+
+  <div class="m-2 col-12 col-md-11 mx-auto fs-3 d-flex align-items-center justify-content-center">
+    <table class="table col-10" id="myTable">
+      <thead>
+        <tr>
+          <th class="fs-6">id</th>
+          <th class="fs-6">Tipo</th>
+          <th class="fs-6">Patrimônio</th>
+          <th class="fs-6 d-none d-md-table-cell">Localização</th>
+          <th class="fs-6">Endereço</th>
+          <th class="fs-6">Status</th>
+          <th class="fs-6">Mais Informações</th>
+        </tr>
+      </thead>
+
+      <tbody id="resultado">
+      </tbody>
+    </table>
   </div>
-  </div>
-  <div class="centerItem">
-    <button class="buttonLog" onclick="insertDevice()">Criar</button>
+  <br>
+  <div style="text-align:center">
   </div>
 
-  <!-- Scripts importantes -->
+  <!-- Scripts Importantes -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./js/addAtivo.js"></script>
+  <script src="./js/dispositivos.js"></script>
   <!-- Script sidebar -->
-  <script src="./js/sidebar.js"></script>
-
-
+  <script src="js/sidebar.js"></script>
 </body>
-
 
 </html>

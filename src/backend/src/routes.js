@@ -12,11 +12,11 @@ router.get("/", (req, res) => {
 });
 
 router.get("/informacoes", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/Info.html"));
+  res.sendFile(path.join(__dirname, "../frontend/info.html"));
 });
 
 router.get("/relatorio", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/RelatorioBeacon.html"));
+  res.sendFile(path.join(__dirname, "../frontend/dispositivos.html"));
 });
 
 router.get("/mapa", (req, res) => {
@@ -24,5 +24,5 @@ router.get("/mapa", (req, res) => {
 });
 
 router.get("/novo-ativo", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/AddAtivo.html"));
+  res.sendFile(path.join(__dirname, "../frontend/novoDispositivo.html"));
 });
