@@ -36,8 +36,12 @@
     scroll-behavior: smooth;
 }
 
-table {
+.table {
     background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
 }
 
 .bolinhas {
