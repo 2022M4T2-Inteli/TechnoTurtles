@@ -145,25 +145,29 @@ const buildingData = {
     ],
 };
 
+// salas (o que chamo de "feature" em "mapSrc.js")
 const roomsData = {
-    type: 'FeatureCollection',
+    // todas ficam no seguinte formato:
+    type: 'FeatureCollection',              // array de features/salas
     features: [
         {
-            type: 'Feature',
-            properties: {
-                name: 'Quadra Grande B',
-                devNum: 5,
+            type: 'Feature',                // sempre "feature" para aparecer os quadrados que representam as salas
+            properties: {                           
+                name: 'Quadra Grande B',    // nome da sala
+                devNum: 5,                  // quantidade de aparelhos na respectiva sala (aqui deverá ser incluída a integração)
             },
             geometry: {
-                type: 'Polygon',
-                coordinates: [[
+                type: 'Polygon',            // polígono de quatro lados
+                coordinates: [[             // coordenadas dos lados 
+                                            // o "resX" e "resY" representam a resolução da coordenada para caberem no mapa
                     [954 - resX, -68 + resY],
                     [954 - resX, -321 + resY],
                     [1106 - resX, -321 + resY],
                     [1106 - resX, -68 + resY],
-                ]],
+                ]],                         
             },
         },
+        // o código é semelhante para todas as salas/features
         {
             type: 'Feature',
             properties: {
