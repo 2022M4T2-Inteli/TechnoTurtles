@@ -7,6 +7,7 @@ const getDevices = () => {
   axios
     .get(url + `/devices`)
     .then((response) => {
+      // cria um array de objetos com os dados do banco de dados
       const devices = [];
       response.data.forEach((device) => {
         devices.push(device);
@@ -16,6 +17,38 @@ const getDevices = () => {
 
       renderDevices(devices);
 
+      $("#but").click(function(){
+        console.log("entrou")
+        function generateRelatory() {
+          let relatory = "";
+          
+          for (let info in devices) {
+            
+            //Add a new line for each information from the table
+            
+            relatory += `
+            Id: ${devices[info].id}
+            Tipo: ${devices[info].tipo}
+            Patrimônio: ${devices[info].patrimonio}
+            Localização atual: ${devices[info].localizacao}
+            Endereço: ${devices[info].endereco}
+            Status: ${devices[info].status}
+            \n
+          `
+          }
+          //Returns the relatory
+          return relatory;
+        }
+        //Creates a PDF document
+        var doc = new jsPDF({
+          orientation: 'portrait',
+          unit: 'cm',
+          format: 'A4'
+        })
+        //Add the text to the PDF
+        doc.text(generateRelatory(), 1, 1)
+        doc.save('relatorio.pdf')   
+    })
       return response.data;
     })
     .catch((e) => console.error(e));
