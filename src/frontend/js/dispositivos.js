@@ -1,12 +1,13 @@
+// porta dos endpoints
 const PORT = 3000;
 const url = `http://localhost:${PORT}`;
 
-//table get devices
-
+// criação da tabela (cada linha é representada no innerHtml, mas é criada na função "renderDevices")
 const getDevices = () => {
   axios
     .get(url + `/devices`)
     .then((response) => {
+      // cria um array de objetos com os dados do banco de dados
       const devices = [];
       response.data.forEach((device) => {
         devices.push(device);
@@ -16,14 +17,47 @@ const getDevices = () => {
 
       renderDevices(devices);
 
+      $("#but").click(function(){
+        console.log("entrou")
+        function generateRelatory() {
+          let relatory = "";
+          
+          for (let info in devices) {
+            
+            //Add a new line for each information from the table
+            
+            relatory += `
+            Id: ${devices[info].id}
+            Tipo: ${devices[info].tipo}
+            Patrimônio: ${devices[info].patrimonio}
+            Localização atual: ${devices[info].localizacao}
+            Endereço: ${devices[info].endereco}
+            Status: ${devices[info].status}
+            \n
+          `
+          }
+          //Returns the relatory
+          return relatory;
+        }
+        //Creates a PDF document
+        var doc = new jsPDF({
+          orientation: 'portrait',
+          unit: 'cm',
+          format: 'A4'
+        })
+        //Add the text to the PDF
+        doc.text(generateRelatory(), 1, 1)
+        doc.save('relatorio.pdf')   
+    })
       return response.data;
     })
     .catch((e) => console.error(e));
 };
 
+// chama a função para criar a tabela quando a página é carregada
 getDevices();
 
-//table render devices on the screen
+// cria cada linha de acordo com o banco de dados e já cria seu respectivo modal
 const renderDevices = (list) => {
   const table = document.getElementById("resultado");
 
@@ -48,8 +82,7 @@ const renderDevices = (list) => {
     : (table.innerHTML = ``);
 };
 
-//ADMIN MODAL edit
-
+// modal de administração que é criado junto com cada linha da tabela
 const modal = (device) => {
   const { id, tipo, patrimonio, localizacao, endereco, status } = device;
 
@@ -137,6 +170,13 @@ const modal = (device) => {
   </div>`;
 };
 
+/*
+=========================================================================
+                  Chamadas aos endpoints do backend
+=========================================================================
+*/
+
+// atualizar o dispositivo
 const updateDevice = (id) => {
   if (confirm("Deseja mesmo atualizar os dados?")) {
     let tipo = document.getElementById("tipo" + id);
@@ -165,19 +205,7 @@ const updateDevice = (id) => {
   }
 };
 
-const deleteDevice = (id) => {
-  if (confirm("Deseja mesmo deletar?")) {
-    axios
-      .delete(url + `/delete_device/${id}`)
-      .then((response) => {
-        getDevices();
-      })
-      .catch((e) => console.error(e));
-  } else {
-    return;
-  }
-};
-
+// muda os botões do modal de atualização de dispositivo
 const toggleInputs = (number) => {
   let ids = [
     "tipo",
@@ -197,7 +225,23 @@ const toggleInputs = (number) => {
   });
 };
 
+// deletar um dispositivo
+const deleteDevice = (id) => {
+  if (confirm("Deseja mesmo deletar?")) {
+    axios
+      .delete(url + `/delete_device/${id}`)
+      .then((response) => {
+        getDevices();
+      })
+      .catch((e) => console.error(e));
+  } else {
+    return;
+  }
+};
 
+/* ================== Filtros ==================  */
+
+// filtro por tipo do dropdown à direta na página
 function typeFilter() {
   var select, input, filter, table, tr, td, i, txtValue;
 
@@ -223,6 +267,7 @@ function typeFilter() {
   }
 }
 
+// filtro de busca da barra de input no começo da página
 function searchFilter() {
   var input, filter, table, tr, td, i, txtValue;
 
@@ -246,8 +291,8 @@ function searchFilter() {
   }
 }
 
+// principal função dessa função é de baixar o relatório em csv ou excel, mas coloquei aqui pra chamar o modal
 function download() {
-  // principal função dessa função é de baixar o relatório em csv ou excel, mas coloquei aqui pra chamar o modal
 
   Swal.fire(
     'Relatório',

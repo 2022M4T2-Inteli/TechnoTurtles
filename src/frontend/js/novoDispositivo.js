@@ -1,13 +1,15 @@
+// definição da porta do localhost
 const PORT = 3000;
 const url = `http://localhost:${PORT}`;
 
-//add new device
+// variáveis que recebem os elementos importantes do html
 let patrimonio = document.getElementById("patrimonio");
 let tipo = document.getElementById("tipo");
 let endereco = document.getElementById("endereco");
 let status = document.getElementById("status");
 
-
+// constante que chama a função que faz a conexão com o endpoint no backend
+// e adiciona o dispositivo no banco de dados (por meio do endpoint)
 const insertDevice = () => {
     let device = {
         patrimonio: patrimonio.value,
@@ -29,10 +31,11 @@ const insertDevice = () => {
     }
 }
 
+// função que chama o modal
 function sweetAlert() {
     Swal.fire(
         'Enviado!',
-        'Ativo cadastrado!', 
+        'Ativo cadastrado!',
         'success'
     )
 }

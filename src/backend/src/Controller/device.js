@@ -1,6 +1,8 @@
 import { openDb } from "../configDB.js";
 
+//Este arquivo é responsável por fazer as operações no banco de dados e exportar as funções para o app.js
 
+//update device from json
 export async function updateDeviceFromJson(json) {
     const obj = JSON.parse(json);
     console.log(obj[0]);

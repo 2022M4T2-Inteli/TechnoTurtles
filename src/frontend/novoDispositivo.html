@@ -39,6 +39,13 @@
     </div>
     <ul class="nav-list">
       <li>
+        <a href="/informacoes">
+          <i class="bi bi-box-arrow-in-down"></i>
+          <span class="links_name">Instruções</span>
+        </a>
+        <span class="tooltip">Instruções</span>
+      </li>
+      <li>
         <a href="/relatorio">
           <i class="bi bi-folder"></i>
           <span class="links_name">Relatórios</span>
@@ -60,14 +67,7 @@
         <span class="tooltip">Adicionar ativo</span>
       </li>
       <li>
-        <a href="./info.html">
-          <i class="bi bi-box-arrow-in-down"></i>
-          <span class="links_name">Instruções</span>
-        </a>
-        <span class="tooltip">Instruções</span>
-      </li>
-      <li>
-        <a href="./loginBeacon.html">
+        <a href="/">
           <i class="bi bi-box-arrow-left"></i>
           <span class="links_name">Sair</span>
         </a>
@@ -76,9 +76,6 @@
     </ul>
   </div>
 
-  <header>
-
-  </header>
   <div>
     <h2 class="centerItem" class=ttl1>Adicione novos ativos!</h2>
   </div>
@@ -86,17 +83,17 @@
   <div class="centerItem">
     <div class="centerList">
       <div class="RLpadding10">
-        <div class="">
+        <div>
           <label>Patrimônio </label>
           <input class="inputlarge" type="text" id="patrimonio">
         </div>
         <br>
-        <div class="">
+        <div>
           <label>Endereço MAC </label>
           <input class="inputlarge" type="text" id="endereco">
         </div>
         <br>
-        <div class="">
+        <div>
           <label id="status">Status</label>
           <select class="inputlarge" id="status">
             <option selected disabled>Selecione</option>
@@ -105,13 +102,12 @@
           </select>
         </div>
         <br>
-        <div class="">
+        <div>
           <label id="status">Tipo de ativo</label>
           <select class="inputlarge" id="tipo">
             <option selected disabled>Selecione</option>
             <option>NOTEBOOK</option>
             <option>TABLET</option>
-            <option>MOVEL</option>
           </select>
         </div>
         <br>
@@ -119,7 +115,7 @@
     </div>
 
   </div>
-  </div>
+
   <div class="centerItem">
     <button class="buttonLog" onclick="insertDevice()">Criar</button>
   </div>
@@ -129,7 +125,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./js/addAtivo.js"></script>
+  <script src="./js/novoDispositivo.js"></script>
   <!-- Script sidebar -->
   <script src="./js/sidebar.js"></script>
 

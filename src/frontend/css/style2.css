@@ -36,8 +36,12 @@
     scroll-behavior: smooth;
 }
 
-table {
+.table {
     background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
 }
 
 .bolinhas {
@@ -135,6 +139,7 @@ h2.ttl1 {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
+    text-align: center;
 }
 
 h2.ttl2 {
