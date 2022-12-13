@@ -118,7 +118,7 @@ app.delete('/delete_device/:id', async (req, res) => {
 // mas essas coisas dependem 
 
 app.get('/test_device', async (req, res) => {
-    const devices = await fetch('http://10.128.65.147/list_devices').then(data => {
+    const devices = await fetch('http://10.128.65.2/list_devices').then(data => {
         return data.json();
     });
     /*Tratar os dados aqui*/
@@ -132,8 +132,9 @@ app.get('/test_device', async (req, res) => {
         // insertLog(obj[i]);
     }
     res.json({
-        "statusCode": 200
-    });
+        "statusCode": 200,
+        devices: devices
+    })
 });
 
 app.get('/test_device2', async (req, res) => {

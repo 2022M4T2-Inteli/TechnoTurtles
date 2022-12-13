@@ -1,4 +1,12 @@
+document.getElementById("search").addEventListener("click", async() => {
+    await axios
+    .get(`http://localhost:3000/test_device`)
+    .then((response) => {
+        console.log(response.data.devices);
+    })
+    .catch((e) => console.error(e));
 
+});
 
 function sweetAlert() {
     let timerInterval
