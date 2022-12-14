@@ -44,12 +44,12 @@
 
 // Nome e senha da rede de WiFi na qual se quer conectar 
 
-const char *ssid = "Inteli-welcome";
-const char *password = "";
+const char *ssid = "Inteli-COLLEGE";
+const char *password = "QazWsx@123";
 
 // Endereço do servidor Web onde a requisição será enviada
 
-String serverName = "http://10.128.1.200:3000/test_device";
+String serverName = "http://10.128.65.128:3000/test_device";
 String request;
 
 #define LED 9
@@ -72,6 +72,8 @@ BLEScan *pBLEScan;
 
 String json, json_buffer = "";
 DynamicJsonDocument doc(2048);
+
+//Numero de dispositivos encontrados
 int counter = 0;
 
 // Função de callback que mostra as informações do dispositivo
