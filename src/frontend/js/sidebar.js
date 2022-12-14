@@ -1,16 +1,17 @@
+
 // variáveis que recebem os elementos do html
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bi-search");
 
-// função que abre a sidebar
-searchBtn.addEventListener("click", () => {
+// função que fecha a sidebar
+closeBtn.addEventListener("click", () => {
     sidebar.classList.toggle("open");
     menuBtnChange();
 });
 
-// função que fecha a sidebar
-closeBtn.addEventListener("click", () => {
+// função que abre a sidebar
+searchBtn.addEventListener("click", () => {
     sidebar.classList.toggle("open");
     menuBtnChange();
 });
