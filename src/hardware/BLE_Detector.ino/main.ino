@@ -48,6 +48,8 @@ const char *password = "";
 String serverName = "http://10.128.1.200:3000/test_device";
 String request;
 
+#define LED 9
+
 // Inicia o servidor assíncrono local do ESP32
 
 AsyncWebServer localServer(80);
@@ -98,6 +100,8 @@ void setup()
   Serial.print("Connected to WiFi network with IP Address: "); // Indica o sucesso da comunicação
   Serial.println(WiFi.localIP()); // Mostra o IP do ESP32 no Monitor Serial
 
+  pinMode(LED, OUTPUT);
+
   // Estabelendo o comando para procurar os dispositivos através do endpoint local
   // 'list_devices'. Uma vez que este é acionado, o microcontrolador começa a procurar
   // por dispositivos com BLE ativado, armazenando seus endereços e gerando um JSON para
@@ -139,6 +143,17 @@ void setup()
 void loop()
 {
 
+  digitalWrite(9,1);
+  
+  for(int i = 0; i < 3; i++){
+
+    digitalWrite(9, 1);
+    delay(500);
+    digitalWrite(9, 0);
+    delay(500);
+
+  }
+
   json_buffer = ""; // Inicia o JSON temporário como vazio
   Serial.println(WiFi.localIP()); // Imprime no monitor Serial o IP do ESP32
   delay(1000); // Espera um segundo antes de iniciar as buscas
@@ -154,4 +169,13 @@ void loop()
   json = json_buffer; // Atribui os resultados do JSON temporário para o efetivo
 
   counter = 0; // Zera o número de dispositivos encontrados para a próxima iteração
+
+  for(int i = 0; i < 10; i++){
+
+    digitalWrite(9, 1);
+    delay(500);
+    digitalWrite(9, 0);
+    delay(500);
+
+  }
 }
