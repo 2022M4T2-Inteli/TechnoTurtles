@@ -3,31 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@700&display=swap');
 
-/* :target .untarget {
-    display: none;
-} */
-
-/* ::-webkit-scrollbar {
-    width: 1vw;
-} */
-
-/* ::-webkit-scrollbar-track {
-    background: #393939;
-} */
-
-/* ::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, rgba(0, 0, 0, 0.150));
-} */
-
-/* ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, #FFF455, rgba(0, 0, 0, 0.150));
-} */
-
-/* ::-webkit-scrollbar-thumb:active {
-    background: linear-gradient(rgba(0, 0, 0, 0.150), #FFF455, #FFF455, #FFF455, rgba(0, 0, 0, 0.150));
-} */
-
-
 * {
     margin: 0;
     padding: 0;
