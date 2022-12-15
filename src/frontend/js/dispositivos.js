@@ -17,15 +17,16 @@ const getDevices = () => {
 
       renderDevices(devices);
 
-      $("#but").click(function(){
-        console.log("entrou")
+      $("#but").click(function () {
+        download();
+        console.log("entrou");
         function generateRelatory() {
           let relatory = "";
-          
+
           for (let info in devices) {
-            
+
             //Add a new line for each information from the table
-            
+
             relatory += `
             Id: ${devices[info].id}
             Tipo: ${devices[info].tipo}
@@ -47,8 +48,8 @@ const getDevices = () => {
         })
         //Add the text to the PDF
         doc.text(generateRelatory(), 1, 1)
-        doc.save('relatorio.pdf')   
-    })
+        doc.save('relatorio.pdf')
+      })
       return response.data;
     })
     .catch((e) => console.error(e));
