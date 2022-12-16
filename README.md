@@ -2,7 +2,7 @@
 
 ## Prototipação de solução IoT - Grupo 4: TechnoTurtles
 
-### [Trailer]()
+### [Trailer](https://drive.google.com/drive/u/1/folders/16pENRe5XZq0MZlZyZKYqeJDMIh6NIKd3)
 
 <img src="https://user-images.githubusercontent.com/99221221/207127449-d1a57950-26ce-493a-9247-fe4923fd4164.png" alt="app-screens-mockup"/>
 
